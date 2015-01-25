@@ -6,6 +6,21 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1F68173E1A75AFA500570C60 /* Intrinsics.gen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1F68173F1A75AFA600570C60 /* Build configuration list for PBXAggregateTarget "Intrinsics.gen" */;
+			buildPhases = (
+				1F6817451A75AFB000570C60 /* Generate Intrinsics.gen */,
+			);
+			dependencies = (
+				1F6817431A75AFAB00570C60 /* PBXTargetDependency */,
+			);
+			name = Intrinsics.gen;
+			productName = Intrinsics.gen;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1F292E371A759B3500010E0D /* Allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2927161A759ABE00010E0D /* Allocator.cpp */; };
 		1F292E381A759B3500010E0D /* APFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2927171A759ABE00010E0D /* APFloat.cpp */; };
@@ -152,6 +167,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1F6816C21A75AD9800570C60;
 			remoteInfo = LLVMTableGen;
+		};
+		1F6817421A75AFAB00570C60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F29253D1A759A7E00010E0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6816D21A75AE0400570C60;
+			remoteInfo = "llvm-tblgen";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -2352,6 +2374,7 @@
 		1F6817101A75AE7600570C60 /* X86RecognizableInstr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86RecognizableInstr.cpp; sourceTree = "<group>"; };
 		1F6817111A75AE7600570C60 /* X86RecognizableInstr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86RecognizableInstr.h; sourceTree = "<group>"; };
 		1F6817331A75AEA300570C60 /* libcurses.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurses.dylib; path = usr/lib/libcurses.dylib; sourceTree = SDKROOT; };
+		1F68173D1A75AF2200570C60 /* generate-intrinsics.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "generate-intrinsics.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2388,6 +2411,7 @@
 				1F292BD71A759ACA00010E0D /* include */,
 				1F292BD61A759AC200010E0D /* lib */,
 				1F6816CE1A75ADDF00570C60 /* tools */,
+				1F68173C1A75AF0B00570C60 /* Build Scripts */,
 				1F68173B1A75AEEC00570C60 /* Frameworks */,
 				1F292E331A759B0A00010E0D /* Products */,
 			);
@@ -5715,6 +5739,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1F68173C1A75AF0B00570C60 /* Build Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				1F68173D1A75AF2200570C60 /* generate-intrinsics.sh */,
+			);
+			name = "Build Scripts";
+			path = ../xcodescripts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -5805,6 +5838,9 @@
 					1F6816D21A75AE0400570C60 = {
 						CreatedOnToolsVersion = 6.2;
 					};
+					1F68173E1A75AFA500570C60 = {
+						CreatedOnToolsVersion = 6.2;
+					};
 				};
 			};
 			buildConfigurationList = 1F2925401A759A7E00010E0D /* Build configuration list for PBXProject "LLVM" */;
@@ -5822,9 +5858,28 @@
 				1F292E311A759B0A00010E0D /* LLVMSupport */,
 				1F6816C21A75AD9800570C60 /* LLVMTableGen */,
 				1F6816D21A75AE0400570C60 /* llvm-tblgen */,
+				1F68173E1A75AFA500570C60 /* Intrinsics.gen */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F6817451A75AFB000570C60 /* Generate Intrinsics.gen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Intrinsics.gen";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${LLVM_PROJECT_ROOT}/xcodescripts/generate-intrinsics.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F292E2E1A759B0A00010E0D /* Sources */ = {
@@ -5987,6 +6042,11 @@
 			target = 1F6816C21A75AD9800570C60 /* LLVMTableGen */;
 			targetProxy = 1F6816DC1A75AE1200570C60 /* PBXContainerItemProxy */;
 		};
+		1F6817431A75AFAB00570C60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F6816D21A75AE0400570C60 /* llvm-tblgen */;
+			targetProxy = 1F6817421A75AFAB00570C60 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -5998,6 +6058,7 @@
 					__STDC_LIMIT_MACROS,
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../include";
+				LLVM_PROJECT_ROOT = "$(SRCROOT)/../";
 				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
@@ -6010,6 +6071,7 @@
 					__STDC_LIMIT_MACROS,
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../include";
+				LLVM_PROJECT_ROOT = "$(SRCROOT)/../";
 			};
 			name = Release;
 		};
@@ -6241,6 +6303,20 @@
 			};
 			name = Release;
 		};
+		1F6817401A75AFA600570C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F6817411A75AFA600570C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -6279,6 +6355,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1F68173F1A75AFA600570C60 /* Build configuration list for PBXAggregateTarget "Intrinsics.gen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F6817401A75AFA600570C60 /* Debug */,
+				1F6817411A75AFA600570C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
