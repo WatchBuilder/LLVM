@@ -5855,10 +5855,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				1F68173E1A75AFA500570C60 /* Intrinsics.gen */,
+				1F6816D21A75AE0400570C60 /* llvm-tblgen */,
 				1F292E311A759B0A00010E0D /* LLVMSupport */,
 				1F6816C21A75AD9800570C60 /* LLVMTableGen */,
-				1F6816D21A75AE0400570C60 /* llvm-tblgen */,
-				1F68173E1A75AFA500570C60 /* Intrinsics.gen */,
 			);
 		};
 /* End PBXProject section */
