@@ -2385,10 +2385,10 @@
 		1F29253C1A759A7E00010E0D = {
 			isa = PBXGroup;
 			children = (
-				1F6817331A75AEA300570C60 /* libcurses.dylib */,
 				1F292BD71A759ACA00010E0D /* include */,
 				1F292BD61A759AC200010E0D /* lib */,
 				1F6816CE1A75ADDF00570C60 /* tools */,
+				1F68173B1A75AEEC00570C60 /* Frameworks */,
 				1F292E331A759B0A00010E0D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -5705,6 +5705,14 @@
 			);
 			name = TableGen;
 			path = ../utils/TableGen;
+			sourceTree = "<group>";
+		};
+		1F68173B1A75AEEC00570C60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F6817331A75AEA300570C60 /* libcurses.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
