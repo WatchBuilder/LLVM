@@ -4,4 +4,7 @@
    <FileRef
       location = "group:lib/LLVM.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:lib/Transforms/LLVMTransforms.xcodeproj">
+   </FileRef>
 </Workspace>
