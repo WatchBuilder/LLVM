@@ -10645,7 +10645,7 @@ SDValue DAGCombiner::SimplifySelectCC(SDLoc DL, SDValue N0, SDValue N1,
   // Check to see if this is the equivalent of setcc
   // FIXME: Turn all of these into setcc if setcc if setcc is legal
   // otherwise, go ahead with the folds.
-  if (0 && N3C && N3C->isNullValue() && N2C && (N2C->getAPIntValue() == 1ULL)) {
+  if (/* DISABLES CODE */ (0) && N3C && N3C->isNullValue() && N2C && (N2C->getAPIntValue() == 1ULL)) {
     EVT XType = N0.getValueType();
     if (!LegalOperations ||
         TLI.isOperationLegal(ISD::SETCC, getSetCCResultType(XType))) {
