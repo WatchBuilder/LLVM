@@ -1,0 +1,719 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1F8DB3FD1A75F9F2007C68AC /* ARM64CommonTableGen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1F8DB3FE1A75F9F2007C68AC /* Build configuration list for PBXAggregateTarget "ARM64CommonTableGen" */;
+			buildPhases = (
+				1F8DB4011A75FA02007C68AC /* ShellScript */,
+			);
+			dependencies = (
+				1F8DB4031A75FA9A007C68AC /* PBXTargetDependency */,
+			);
+			name = ARM64CommonTableGen;
+			productName = ARM64CommonTableGen;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		1F8DB3CF1A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6816D31A75AE0400570C60;
+			remoteInfo = "llvm-tblgen";
+		};
+		1F8DB3D11A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F292E321A759B0A00010E0D;
+			remoteInfo = LLVMSupport;
+		};
+		1F8DB3D31A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6816C31A75AD9800570C60;
+			remoteInfo = LLVMTableGen;
+		};
+		1F8DB3D51A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F68174A1A75B0AC00570C60;
+			remoteInfo = LLVMCore;
+		};
+		1F8DB3D71A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6817831A75B13D00570C60;
+			remoteInfo = LLVMIRReader;
+		};
+		1F8DB3D91A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1FA6AD641A75D5F800997E31;
+			remoteInfo = LLVMSandboxSupport;
+		};
+		1F8DB3DB1A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DAE141A75E23C007C68AC;
+			remoteInfo = LLVMTool_TableGen;
+		};
+		1F8DB3DD1A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DAE511A75E594007C68AC;
+			remoteInfo = LLVMCodeGen;
+		};
+		1F8DB3DF1A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DAED91A75E686007C68AC;
+			remoteInfo = LLVMSelectionDAG;
+		};
+		1F8DB3E11A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DAEFF1A75E721007C68AC;
+			remoteInfo = LLVMAsmPrinter;
+		};
+		1F8DB3E31A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DAF1D1A75E774007C68AC;
+			remoteInfo = LLVMBitReader;
+		};
+		1F8DB3E51A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DAF2A1A75E7BA007C68AC;
+			remoteInfo = LLVMBitWriter;
+		};
+		1F8DB3E71A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB0B41A75EC43007C68AC;
+			remoteInfo = LLVMAnalysis;
+		};
+		1F8DB3E91A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB0F11A75ED00007C68AC;
+			remoteInfo = LLVMipa;
+		};
+		1F8DB3EB1A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1021A75ED4F007C68AC;
+			remoteInfo = LLVMLTO;
+		};
+		1F8DB3ED1A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB10C1A75ED93007C68AC;
+			remoteInfo = LLVMMC;
+		};
+		1F8DB3EF1A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1481A75EF10007C68AC;
+			remoteInfo = LLVMMCParser;
+		};
+		1F8DB3F11A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1591A75EF4E007C68AC;
+			remoteInfo = LLVMMCDisassembler;
+		};
+		1F8DB3F31A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1621A75EF80007C68AC;
+			remoteInfo = LLVMObject;
+		};
+		1F8DB3F51A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1771A75EFC7007C68AC;
+			remoteInfo = LLVMOption;
+		};
+		1F8DB3F71A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1831A75EFF9007C68AC;
+			remoteInfo = LLVMDebugInfo;
+		};
+		1F8DB3F91A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1A71A75F041007C68AC;
+			remoteInfo = LLVMAsmParser;
+		};
+		1F8DB3FB1A75F9E4007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB2631A75F27B007C68AC;
+			remoteInfo = LLVMTarget;
+		};
+		1F8DB4021A75FA9A007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6816D21A75AE0400570C60;
+			remoteInfo = "llvm-tblgen";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LLVM.xcodeproj; path = ../../LLVM.xcodeproj; sourceTree = "<group>"; };
+		1F8DB4051A75FAEF007C68AC /* ARM64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64.h; sourceTree = "<group>"; };
+		1F8DB4061A75FAEF007C68AC /* ARM64.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARM64.td; sourceTree = "<group>"; };
+		1F8DB4071A75FAEF007C68AC /* ARM64AddressTypePromotion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64AddressTypePromotion.cpp; sourceTree = "<group>"; };
+		1F8DB4081A75FAEF007C68AC /* ARM64AdvSIMDScalarPass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64AdvSIMDScalarPass.cpp; sourceTree = "<group>"; };
+		1F8DB4091A75FAEF007C68AC /* ARM64AsmPrinter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64AsmPrinter.cpp; sourceTree = "<group>"; };
+		1F8DB40A1A75FAEF007C68AC /* ARM64BranchRelaxation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64BranchRelaxation.cpp; sourceTree = "<group>"; };
+		1F8DB40B1A75FAEF007C68AC /* ARM64CallingConv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64CallingConv.h; sourceTree = "<group>"; };
+		1F8DB40C1A75FAEF007C68AC /* ARM64CallingConvention.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARM64CallingConvention.td; sourceTree = "<group>"; };
+		1F8DB40D1A75FAEF007C68AC /* ARM64CleanupLocalDynamicTLSPass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64CleanupLocalDynamicTLSPass.cpp; sourceTree = "<group>"; };
+		1F8DB40E1A75FAEF007C68AC /* ARM64CollectLOH.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64CollectLOH.cpp; sourceTree = "<group>"; };
+		1F8DB40F1A75FAEF007C68AC /* ARM64ConditionalCompares.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64ConditionalCompares.cpp; sourceTree = "<group>"; };
+		1F8DB4101A75FAEF007C68AC /* ARM64DeadRegisterDefinitionsPass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64DeadRegisterDefinitionsPass.cpp; sourceTree = "<group>"; };
+		1F8DB4111A75FAEF007C68AC /* ARM64ExpandPseudoInsts.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64ExpandPseudoInsts.cpp; sourceTree = "<group>"; };
+		1F8DB4121A75FAEF007C68AC /* ARM64FastISel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64FastISel.cpp; sourceTree = "<group>"; };
+		1F8DB4131A75FAEF007C68AC /* ARM64FrameLowering.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64FrameLowering.cpp; sourceTree = "<group>"; };
+		1F8DB4141A75FAEF007C68AC /* ARM64FrameLowering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64FrameLowering.h; sourceTree = "<group>"; };
+		1F8DB4151A75FAEF007C68AC /* ARM64InstrAtomics.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARM64InstrAtomics.td; sourceTree = "<group>"; };
+		1F8DB4161A75FAEF007C68AC /* ARM64InstrFormats.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARM64InstrFormats.td; sourceTree = "<group>"; };
+		1F8DB4171A75FAEF007C68AC /* ARM64InstrInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64InstrInfo.cpp; sourceTree = "<group>"; };
+		1F8DB4181A75FAEF007C68AC /* ARM64InstrInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64InstrInfo.h; sourceTree = "<group>"; };
+		1F8DB4191A75FAEF007C68AC /* ARM64InstrInfo.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARM64InstrInfo.td; sourceTree = "<group>"; };
+		1F8DB41A1A75FAEF007C68AC /* ARM64ISelDAGToDAG.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64ISelDAGToDAG.cpp; sourceTree = "<group>"; };
+		1F8DB41B1A75FAEF007C68AC /* ARM64ISelLowering.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64ISelLowering.cpp; sourceTree = "<group>"; };
+		1F8DB41C1A75FAEF007C68AC /* ARM64ISelLowering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64ISelLowering.h; sourceTree = "<group>"; };
+		1F8DB41D1A75FAEF007C68AC /* ARM64LoadStoreOptimizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64LoadStoreOptimizer.cpp; sourceTree = "<group>"; };
+		1F8DB41E1A75FAEF007C68AC /* ARM64MachineFunctionInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64MachineFunctionInfo.h; sourceTree = "<group>"; };
+		1F8DB41F1A75FAEF007C68AC /* ARM64MCInstLower.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64MCInstLower.cpp; sourceTree = "<group>"; };
+		1F8DB4201A75FAEF007C68AC /* ARM64MCInstLower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64MCInstLower.h; sourceTree = "<group>"; };
+		1F8DB4211A75FAEF007C68AC /* ARM64PerfectShuffle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64PerfectShuffle.h; sourceTree = "<group>"; };
+		1F8DB4221A75FAEF007C68AC /* ARM64PromoteConstant.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64PromoteConstant.cpp; sourceTree = "<group>"; };
+		1F8DB4231A75FAEF007C68AC /* ARM64RegisterInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64RegisterInfo.cpp; sourceTree = "<group>"; };
+		1F8DB4241A75FAEF007C68AC /* ARM64RegisterInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64RegisterInfo.h; sourceTree = "<group>"; };
+		1F8DB4251A75FAEF007C68AC /* ARM64RegisterInfo.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARM64RegisterInfo.td; sourceTree = "<group>"; };
+		1F8DB4261A75FAEF007C68AC /* ARM64SchedCyclone.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARM64SchedCyclone.td; sourceTree = "<group>"; };
+		1F8DB4271A75FAEF007C68AC /* ARM64Schedule.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = ARM64Schedule.td; sourceTree = "<group>"; };
+		1F8DB4281A75FAEF007C68AC /* ARM64SelectionDAGInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64SelectionDAGInfo.cpp; sourceTree = "<group>"; };
+		1F8DB4291A75FAEF007C68AC /* ARM64SelectionDAGInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64SelectionDAGInfo.h; sourceTree = "<group>"; };
+		1F8DB42A1A75FAEF007C68AC /* ARM64SetGlobalLinkage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64SetGlobalLinkage.cpp; sourceTree = "<group>"; };
+		1F8DB42B1A75FAEF007C68AC /* ARM64StorePairSuppress.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64StorePairSuppress.cpp; sourceTree = "<group>"; };
+		1F8DB42C1A75FAEF007C68AC /* ARM64Subtarget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64Subtarget.cpp; sourceTree = "<group>"; };
+		1F8DB42D1A75FAEF007C68AC /* ARM64Subtarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64Subtarget.h; sourceTree = "<group>"; };
+		1F8DB42E1A75FAEF007C68AC /* ARM64TargetMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64TargetMachine.cpp; sourceTree = "<group>"; };
+		1F8DB42F1A75FAEF007C68AC /* ARM64TargetMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64TargetMachine.h; sourceTree = "<group>"; };
+		1F8DB4301A75FAEF007C68AC /* ARM64TargetObjectFile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64TargetObjectFile.cpp; sourceTree = "<group>"; };
+		1F8DB4311A75FAEF007C68AC /* ARM64TargetObjectFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64TargetObjectFile.h; sourceTree = "<group>"; };
+		1F8DB4321A75FAEF007C68AC /* ARM64TargetTransformInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64TargetTransformInfo.cpp; sourceTree = "<group>"; };
+		1F8DB4341A75FAEF007C68AC /* ARM64AsmParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64AsmParser.cpp; sourceTree = "<group>"; };
+		1F8DB4361A75FAEF007C68AC /* ARM64Disassembler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64Disassembler.cpp; sourceTree = "<group>"; };
+		1F8DB4371A75FAEF007C68AC /* ARM64Disassembler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64Disassembler.h; sourceTree = "<group>"; };
+		1F8DB4391A75FAEF007C68AC /* ARM64InstPrinter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64InstPrinter.cpp; sourceTree = "<group>"; };
+		1F8DB43A1A75FAEF007C68AC /* ARM64InstPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64InstPrinter.h; sourceTree = "<group>"; };
+		1F8DB43C1A75FAEF007C68AC /* ARM64AddressingModes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64AddressingModes.h; sourceTree = "<group>"; };
+		1F8DB43D1A75FAEF007C68AC /* ARM64AsmBackend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64AsmBackend.cpp; sourceTree = "<group>"; };
+		1F8DB43E1A75FAEF007C68AC /* ARM64BaseInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64BaseInfo.h; sourceTree = "<group>"; };
+		1F8DB43F1A75FAEF007C68AC /* ARM64ELFObjectWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64ELFObjectWriter.cpp; sourceTree = "<group>"; };
+		1F8DB4401A75FAEF007C68AC /* ARM64ELFStreamer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64ELFStreamer.cpp; sourceTree = "<group>"; };
+		1F8DB4411A75FAEF007C68AC /* ARM64ELFStreamer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64ELFStreamer.h; sourceTree = "<group>"; };
+		1F8DB4421A75FAEF007C68AC /* ARM64FixupKinds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64FixupKinds.h; sourceTree = "<group>"; };
+		1F8DB4431A75FAEF007C68AC /* ARM64MachObjectWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64MachObjectWriter.cpp; sourceTree = "<group>"; };
+		1F8DB4441A75FAEF007C68AC /* ARM64MCAsmInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64MCAsmInfo.cpp; sourceTree = "<group>"; };
+		1F8DB4451A75FAEF007C68AC /* ARM64MCAsmInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64MCAsmInfo.h; sourceTree = "<group>"; };
+		1F8DB4461A75FAEF007C68AC /* ARM64MCCodeEmitter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64MCCodeEmitter.cpp; sourceTree = "<group>"; };
+		1F8DB4471A75FAEF007C68AC /* ARM64MCExpr.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64MCExpr.cpp; sourceTree = "<group>"; };
+		1F8DB4481A75FAEF007C68AC /* ARM64MCExpr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64MCExpr.h; sourceTree = "<group>"; };
+		1F8DB4491A75FAEF007C68AC /* ARM64MCTargetDesc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64MCTargetDesc.cpp; sourceTree = "<group>"; };
+		1F8DB44A1A75FAEF007C68AC /* ARM64MCTargetDesc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64MCTargetDesc.h; sourceTree = "<group>"; };
+		1F8DB44C1A75FAEF007C68AC /* ARM64TargetInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64TargetInfo.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1F8DB3AC1A75F9B6007C68AC = {
+			isa = PBXGroup;
+			children = (
+				1F8DB4041A75FAE8007C68AC /* lib */,
+				1F8DB44E1A75FAF8007C68AC /* TableGen Data */,
+				1F8DB3B31A75F9DA007C68AC /* References */,
+			);
+			sourceTree = "<group>";
+		};
+		1F8DB3B31A75F9DA007C68AC /* References */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */,
+			);
+			name = References;
+			sourceTree = "<group>";
+		};
+		1F8DB3B51A75F9E4007C68AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB3D01A75F9E4007C68AC /* llvm-tblgen */,
+				1F8DB3D21A75F9E4007C68AC /* libLLVMSupport.a */,
+				1F8DB3D41A75F9E4007C68AC /* libLLVMTableGen.a */,
+				1F8DB3D61A75F9E4007C68AC /* libLLVMCore.a */,
+				1F8DB3D81A75F9E4007C68AC /* libLLVMIRReader.a */,
+				1F8DB3DA1A75F9E4007C68AC /* libLLVMSandboxSupport.a */,
+				1F8DB3DC1A75F9E4007C68AC /* libLLVMTool_TableGen.a */,
+				1F8DB3DE1A75F9E4007C68AC /* libLLVMCodeGen.a */,
+				1F8DB3E01A75F9E4007C68AC /* libLLVMSelectionDAG.a */,
+				1F8DB3E21A75F9E4007C68AC /* libLLVMAsmPrinter.a */,
+				1F8DB3E41A75F9E4007C68AC /* libLLVMBitReader.a */,
+				1F8DB3E61A75F9E4007C68AC /* libLLVMBitWriter.a */,
+				1F8DB3E81A75F9E4007C68AC /* libLLVMAnalysis.a */,
+				1F8DB3EA1A75F9E4007C68AC /* libLLVMipa.a */,
+				1F8DB3EC1A75F9E4007C68AC /* libLLVMLTO.a */,
+				1F8DB3EE1A75F9E4007C68AC /* libLLVMMC.a */,
+				1F8DB3F01A75F9E4007C68AC /* libLLVMMCParser.a */,
+				1F8DB3F21A75F9E4007C68AC /* libLLVMMCDisassembler.a */,
+				1F8DB3F41A75F9E4007C68AC /* libLLVMObject.a */,
+				1F8DB3F61A75F9E4007C68AC /* libLLVMOption.a */,
+				1F8DB3F81A75F9E4007C68AC /* libLLVMDebugInfo.a */,
+				1F8DB3FA1A75F9E4007C68AC /* libLLVMAsmParser.a */,
+				1F8DB3FC1A75F9E4007C68AC /* libLLVMTarget.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F8DB4041A75FAE8007C68AC /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB44D1A75FAF3007C68AC /* CodeGen */,
+				1F8DB4331A75FAEF007C68AC /* AsmParser */,
+				1F8DB4351A75FAEF007C68AC /* Disassembler */,
+				1F8DB4381A75FAEF007C68AC /* InstPrinter */,
+				1F8DB43B1A75FAEF007C68AC /* MCTargetDesc */,
+				1F8DB44B1A75FAEF007C68AC /* TargetInfo */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		1F8DB4331A75FAEF007C68AC /* AsmParser */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB4341A75FAEF007C68AC /* ARM64AsmParser.cpp */,
+			);
+			path = AsmParser;
+			sourceTree = "<group>";
+		};
+		1F8DB4351A75FAEF007C68AC /* Disassembler */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB4361A75FAEF007C68AC /* ARM64Disassembler.cpp */,
+				1F8DB4371A75FAEF007C68AC /* ARM64Disassembler.h */,
+			);
+			path = Disassembler;
+			sourceTree = "<group>";
+		};
+		1F8DB4381A75FAEF007C68AC /* InstPrinter */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB4391A75FAEF007C68AC /* ARM64InstPrinter.cpp */,
+				1F8DB43A1A75FAEF007C68AC /* ARM64InstPrinter.h */,
+			);
+			path = InstPrinter;
+			sourceTree = "<group>";
+		};
+		1F8DB43B1A75FAEF007C68AC /* MCTargetDesc */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB43C1A75FAEF007C68AC /* ARM64AddressingModes.h */,
+				1F8DB43D1A75FAEF007C68AC /* ARM64AsmBackend.cpp */,
+				1F8DB43E1A75FAEF007C68AC /* ARM64BaseInfo.h */,
+				1F8DB43F1A75FAEF007C68AC /* ARM64ELFObjectWriter.cpp */,
+				1F8DB4401A75FAEF007C68AC /* ARM64ELFStreamer.cpp */,
+				1F8DB4411A75FAEF007C68AC /* ARM64ELFStreamer.h */,
+				1F8DB4421A75FAEF007C68AC /* ARM64FixupKinds.h */,
+				1F8DB4431A75FAEF007C68AC /* ARM64MachObjectWriter.cpp */,
+				1F8DB4441A75FAEF007C68AC /* ARM64MCAsmInfo.cpp */,
+				1F8DB4451A75FAEF007C68AC /* ARM64MCAsmInfo.h */,
+				1F8DB4461A75FAEF007C68AC /* ARM64MCCodeEmitter.cpp */,
+				1F8DB4471A75FAEF007C68AC /* ARM64MCExpr.cpp */,
+				1F8DB4481A75FAEF007C68AC /* ARM64MCExpr.h */,
+				1F8DB4491A75FAEF007C68AC /* ARM64MCTargetDesc.cpp */,
+				1F8DB44A1A75FAEF007C68AC /* ARM64MCTargetDesc.h */,
+			);
+			path = MCTargetDesc;
+			sourceTree = "<group>";
+		};
+		1F8DB44B1A75FAEF007C68AC /* TargetInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB44C1A75FAEF007C68AC /* ARM64TargetInfo.cpp */,
+			);
+			path = TargetInfo;
+			sourceTree = "<group>";
+		};
+		1F8DB44D1A75FAF3007C68AC /* CodeGen */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB4051A75FAEF007C68AC /* ARM64.h */,
+				1F8DB4071A75FAEF007C68AC /* ARM64AddressTypePromotion.cpp */,
+				1F8DB4081A75FAEF007C68AC /* ARM64AdvSIMDScalarPass.cpp */,
+				1F8DB4091A75FAEF007C68AC /* ARM64AsmPrinter.cpp */,
+				1F8DB40A1A75FAEF007C68AC /* ARM64BranchRelaxation.cpp */,
+				1F8DB40B1A75FAEF007C68AC /* ARM64CallingConv.h */,
+				1F8DB40D1A75FAEF007C68AC /* ARM64CleanupLocalDynamicTLSPass.cpp */,
+				1F8DB40E1A75FAEF007C68AC /* ARM64CollectLOH.cpp */,
+				1F8DB40F1A75FAEF007C68AC /* ARM64ConditionalCompares.cpp */,
+				1F8DB4101A75FAEF007C68AC /* ARM64DeadRegisterDefinitionsPass.cpp */,
+				1F8DB4111A75FAEF007C68AC /* ARM64ExpandPseudoInsts.cpp */,
+				1F8DB4121A75FAEF007C68AC /* ARM64FastISel.cpp */,
+				1F8DB4131A75FAEF007C68AC /* ARM64FrameLowering.cpp */,
+				1F8DB4141A75FAEF007C68AC /* ARM64FrameLowering.h */,
+				1F8DB4171A75FAEF007C68AC /* ARM64InstrInfo.cpp */,
+				1F8DB4181A75FAEF007C68AC /* ARM64InstrInfo.h */,
+				1F8DB41A1A75FAEF007C68AC /* ARM64ISelDAGToDAG.cpp */,
+				1F8DB41B1A75FAEF007C68AC /* ARM64ISelLowering.cpp */,
+				1F8DB41C1A75FAEF007C68AC /* ARM64ISelLowering.h */,
+				1F8DB41D1A75FAEF007C68AC /* ARM64LoadStoreOptimizer.cpp */,
+				1F8DB41E1A75FAEF007C68AC /* ARM64MachineFunctionInfo.h */,
+				1F8DB41F1A75FAEF007C68AC /* ARM64MCInstLower.cpp */,
+				1F8DB4201A75FAEF007C68AC /* ARM64MCInstLower.h */,
+				1F8DB4211A75FAEF007C68AC /* ARM64PerfectShuffle.h */,
+				1F8DB4221A75FAEF007C68AC /* ARM64PromoteConstant.cpp */,
+				1F8DB4231A75FAEF007C68AC /* ARM64RegisterInfo.cpp */,
+				1F8DB4241A75FAEF007C68AC /* ARM64RegisterInfo.h */,
+				1F8DB4281A75FAEF007C68AC /* ARM64SelectionDAGInfo.cpp */,
+				1F8DB4291A75FAEF007C68AC /* ARM64SelectionDAGInfo.h */,
+				1F8DB42A1A75FAEF007C68AC /* ARM64SetGlobalLinkage.cpp */,
+				1F8DB42B1A75FAEF007C68AC /* ARM64StorePairSuppress.cpp */,
+				1F8DB42C1A75FAEF007C68AC /* ARM64Subtarget.cpp */,
+				1F8DB42D1A75FAEF007C68AC /* ARM64Subtarget.h */,
+				1F8DB42E1A75FAEF007C68AC /* ARM64TargetMachine.cpp */,
+				1F8DB42F1A75FAEF007C68AC /* ARM64TargetMachine.h */,
+				1F8DB4301A75FAEF007C68AC /* ARM64TargetObjectFile.cpp */,
+				1F8DB4311A75FAEF007C68AC /* ARM64TargetObjectFile.h */,
+				1F8DB4321A75FAEF007C68AC /* ARM64TargetTransformInfo.cpp */,
+			);
+			name = CodeGen;
+			sourceTree = "<group>";
+		};
+		1F8DB44E1A75FAF8007C68AC /* TableGen Data */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB4061A75FAEF007C68AC /* ARM64.td */,
+				1F8DB40C1A75FAEF007C68AC /* ARM64CallingConvention.td */,
+				1F8DB4151A75FAEF007C68AC /* ARM64InstrAtomics.td */,
+				1F8DB4161A75FAEF007C68AC /* ARM64InstrFormats.td */,
+				1F8DB4191A75FAEF007C68AC /* ARM64InstrInfo.td */,
+				1F8DB4251A75FAEF007C68AC /* ARM64RegisterInfo.td */,
+				1F8DB4261A75FAEF007C68AC /* ARM64SchedCyclone.td */,
+				1F8DB4271A75FAEF007C68AC /* ARM64Schedule.td */,
+			);
+			name = "TableGen Data";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		1F8DB3AD1A75F9B6007C68AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				TargetAttributes = {
+					1F8DB3FD1A75F9F2007C68AC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 1F8DB3B01A75F9B6007C68AC /* Build configuration list for PBXProject "LLVMTargetARM64" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1F8DB3AC1A75F9B6007C68AC;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1F8DB3B51A75F9E4007C68AC /* Products */;
+					ProjectRef = 1F8DB3B41A75F9E4007C68AC /* LLVM.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1F8DB3FD1A75F9F2007C68AC /* ARM64CommonTableGen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1F8DB3D01A75F9E4007C68AC /* llvm-tblgen */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "llvm-tblgen";
+			remoteRef = 1F8DB3CF1A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3D21A75F9E4007C68AC /* libLLVMSupport.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMSupport.a;
+			remoteRef = 1F8DB3D11A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3D41A75F9E4007C68AC /* libLLVMTableGen.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMTableGen.a;
+			remoteRef = 1F8DB3D31A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3D61A75F9E4007C68AC /* libLLVMCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMCore.a;
+			remoteRef = 1F8DB3D51A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3D81A75F9E4007C68AC /* libLLVMIRReader.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMIRReader.a;
+			remoteRef = 1F8DB3D71A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3DA1A75F9E4007C68AC /* libLLVMSandboxSupport.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMSandboxSupport.a;
+			remoteRef = 1F8DB3D91A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3DC1A75F9E4007C68AC /* libLLVMTool_TableGen.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMTool_TableGen.a;
+			remoteRef = 1F8DB3DB1A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3DE1A75F9E4007C68AC /* libLLVMCodeGen.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMCodeGen.a;
+			remoteRef = 1F8DB3DD1A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3E01A75F9E4007C68AC /* libLLVMSelectionDAG.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMSelectionDAG.a;
+			remoteRef = 1F8DB3DF1A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3E21A75F9E4007C68AC /* libLLVMAsmPrinter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMAsmPrinter.a;
+			remoteRef = 1F8DB3E11A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3E41A75F9E4007C68AC /* libLLVMBitReader.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMBitReader.a;
+			remoteRef = 1F8DB3E31A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3E61A75F9E4007C68AC /* libLLVMBitWriter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMBitWriter.a;
+			remoteRef = 1F8DB3E51A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3E81A75F9E4007C68AC /* libLLVMAnalysis.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMAnalysis.a;
+			remoteRef = 1F8DB3E71A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3EA1A75F9E4007C68AC /* libLLVMipa.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMipa.a;
+			remoteRef = 1F8DB3E91A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3EC1A75F9E4007C68AC /* libLLVMLTO.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMLTO.a;
+			remoteRef = 1F8DB3EB1A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3EE1A75F9E4007C68AC /* libLLVMMC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMMC.a;
+			remoteRef = 1F8DB3ED1A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3F01A75F9E4007C68AC /* libLLVMMCParser.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMMCParser.a;
+			remoteRef = 1F8DB3EF1A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3F21A75F9E4007C68AC /* libLLVMMCDisassembler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMMCDisassembler.a;
+			remoteRef = 1F8DB3F11A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3F41A75F9E4007C68AC /* libLLVMObject.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMObject.a;
+			remoteRef = 1F8DB3F31A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3F61A75F9E4007C68AC /* libLLVMOption.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMOption.a;
+			remoteRef = 1F8DB3F51A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3F81A75F9E4007C68AC /* libLLVMDebugInfo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMDebugInfo.a;
+			remoteRef = 1F8DB3F71A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3FA1A75F9E4007C68AC /* libLLVMAsmParser.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMAsmParser.a;
+			remoteRef = 1F8DB3F91A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB3FC1A75F9E4007C68AC /* libLLVMTarget.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMTarget.a;
+			remoteRef = 1F8DB3FB1A75F9E4007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F8DB4011A75FA02007C68AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${LLVM_PROJECT_ROOT}/xcodescripts/ARM64CommonTableGen.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F8DB4031A75FA9A007C68AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "llvm-tblgen";
+			targetProxy = 1F8DB4021A75FA9A007C68AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F8DB3B11A75F9B6007C68AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LLVM_PROJECT_ROOT = "$(SRCROOT)/../../..";
+			};
+			name = Debug;
+		};
+		1F8DB3B21A75F9B6007C68AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LLVM_PROJECT_ROOT = "$(SRCROOT)/../../..";
+			};
+			name = Release;
+		};
+		1F8DB3FF1A75F9F2007C68AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F8DB4001A75F9F2007C68AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F8DB3B01A75F9B6007C68AC /* Build configuration list for PBXProject "LLVMTargetARM64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8DB3B11A75F9B6007C68AC /* Debug */,
+				1F8DB3B21A75F9B6007C68AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F8DB3FE1A75F9F2007C68AC /* Build configuration list for PBXAggregateTarget "ARM64CommonTableGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8DB3FF1A75F9F2007C68AC /* Debug */,
+				1F8DB4001A75F9F2007C68AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F8DB3AD1A75F9B6007C68AC /* Project object */;
+}

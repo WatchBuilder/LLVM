@@ -13,4 +13,7 @@
    <FileRef
       location = "group:lib/Target/X86/LLVMTargetX86.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:lib/Target/ARM64/LLVMTargetARM64.xcodeproj">
+   </FileRef>
 </Workspace>
