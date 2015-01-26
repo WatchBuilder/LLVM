@@ -470,6 +470,7 @@
 		1F8DB1521A75EF23007C68AC /* MCAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2926EF1A759ABE00010E0D /* MCAsmParser.cpp */; };
 		1F8DB1531A75EF23007C68AC /* MCAsmParserExtension.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2926F01A759ABE00010E0D /* MCAsmParserExtension.cpp */; };
 		1F8DB1541A75EF23007C68AC /* MCTargetAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2926F11A759ABE00010E0D /* MCTargetAsmParser.cpp */; };
+		1F8DB15D1A75EF63007C68AC /* Disassembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2926CF1A759ABE00010E0D /* Disassembler.cpp */; };
 		1FA6AD6C1A75D67500997E31 /* SandboxExec.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA6AD6A1A75D67500997E31 /* SandboxExec.h */; };
 		1FA6AD6D1A75D67500997E31 /* SandboxIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA6AD6B1A75D67500997E31 /* SandboxIO.h */; };
 		1FA6AD701A75D69A00997E31 /* SandboxIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6AD6F1A75D69A00997E31 /* SandboxIO.cpp */; };
@@ -2633,6 +2634,7 @@
 		1F8DB1021A75ED4F007C68AC /* libLLVMLTO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMLTO.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DB10C1A75ED93007C68AC /* libLLVMMC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMMC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DB1481A75EF10007C68AC /* libLLVMMCParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMMCParser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8DB1591A75EF4E007C68AC /* libLLVMMCDisassembler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMMCDisassembler.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA6AD641A75D5F800997E31 /* libLLVMSandboxSupport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMSandboxSupport.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA6AD6A1A75D67500997E31 /* SandboxExec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandboxExec.h; sourceTree = "<group>"; };
 		1FA6AD6B1A75D67500997E31 /* SandboxIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandboxIO.h; sourceTree = "<group>"; };
@@ -2751,6 +2753,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F8DB1451A75EF10007C68AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8DB1561A75EF4E007C68AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5834,6 +5843,7 @@
 				1F8DB1021A75ED4F007C68AC /* libLLVMLTO.a */,
 				1F8DB10C1A75ED93007C68AC /* libLLVMMC.a */,
 				1F8DB1481A75EF10007C68AC /* libLLVMMCParser.a */,
+				1F8DB1591A75EF4E007C68AC /* libLLVMMCDisassembler.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -6041,6 +6051,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F8DB1461A75EF10007C68AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8DB1571A75EF4E007C68AC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -6340,6 +6357,23 @@
 			productReference = 1F8DB1481A75EF10007C68AC /* libLLVMMCParser.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F8DB1581A75EF4E007C68AC /* LLVMMCDisassembler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8DB15A1A75EF4E007C68AC /* Build configuration list for PBXNativeTarget "LLVMMCDisassembler" */;
+			buildPhases = (
+				1F8DB1551A75EF4E007C68AC /* Sources */,
+				1F8DB1561A75EF4E007C68AC /* Frameworks */,
+				1F8DB1571A75EF4E007C68AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLVMMCDisassembler;
+			productName = LLVMMCDisassembler;
+			productReference = 1F8DB1591A75EF4E007C68AC /* libLLVMMCDisassembler.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		1FA6AD631A75D5F800997E31 /* LLVMSandboxSupport */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FA6AD671A75D5F800997E31 /* Build configuration list for PBXNativeTarget "LLVMSandboxSupport" */;
@@ -6417,6 +6451,9 @@
 					1F8DB1471A75EF10007C68AC = {
 						CreatedOnToolsVersion = 6.2;
 					};
+					1F8DB1581A75EF4E007C68AC = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					1FA6AD631A75D5F800997E31 = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -6452,6 +6489,7 @@
 				1F8DB1011A75ED4F007C68AC /* LLVMLTO */,
 				1F8DB10B1A75ED93007C68AC /* LLVMMC */,
 				1F8DB1471A75EF10007C68AC /* LLVMMCParser */,
+				1F8DB1581A75EF4E007C68AC /* LLVMMCDisassembler */,
 			);
 		};
 /* End PBXProject section */
@@ -7026,6 +7064,14 @@
 				1F8DB1521A75EF23007C68AC /* MCAsmParser.cpp in Sources */,
 				1F8DB1531A75EF23007C68AC /* MCAsmParserExtension.cpp in Sources */,
 				1F8DB1541A75EF23007C68AC /* MCTargetAsmParser.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8DB1551A75EF4E007C68AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8DB15D1A75EF63007C68AC /* Disassembler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -8352,6 +8398,81 @@
 			};
 			name = Release;
 		};
+		1F8DB15B1A75EF4E007C68AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F8DB15C1A75EF4E007C68AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		1FA6AD651A75D5F800997E31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -8580,6 +8701,14 @@
 			buildConfigurations = (
 				1F8DB14A1A75EF10007C68AC /* Debug */,
 				1F8DB14B1A75EF10007C68AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F8DB15A1A75EF4E007C68AC /* Build configuration list for PBXNativeTarget "LLVMMCDisassembler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8DB15B1A75EF4E007C68AC /* Debug */,
+				1F8DB15C1A75EF4E007C68AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
