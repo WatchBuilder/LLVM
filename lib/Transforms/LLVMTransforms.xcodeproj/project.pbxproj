@@ -117,6 +117,10 @@
 		1F8DB08C1A75EB44007C68AC /* PruneEH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF9C1A75E8DC007C68AC /* PruneEH.cpp */; };
 		1F8DB08D1A75EB44007C68AC /* StripDeadPrototypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF9D1A75E8DC007C68AC /* StripDeadPrototypes.cpp */; };
 		1F8DB08E1A75EB44007C68AC /* StripSymbols.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF9E1A75E8DC007C68AC /* StripSymbols.cpp */; };
+		1F8DB0991A75EB87007C68AC /* BBVectorize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFF51A75E8DC007C68AC /* BBVectorize.cpp */; };
+		1F8DB09A1A75EB87007C68AC /* LoopVectorize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFF61A75E8DC007C68AC /* LoopVectorize.cpp */; };
+		1F8DB09B1A75EB87007C68AC /* SLPVectorizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFF71A75E8DC007C68AC /* SLPVectorizer.cpp */; };
+		1F8DB09C1A75EB87007C68AC /* Vectorize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFF81A75E8DC007C68AC /* Vectorize.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,6 +237,13 @@
 			remoteInfo = Intrinsics.gen;
 		};
 		1F8DB0781A75EB3C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DAF3A1A75E8A2007C68AC /* LLVM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F68173E1A75AFA500570C60;
+			remoteInfo = Intrinsics.gen;
+		};
+		1F8DB0971A75EB7F007C68AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F8DAF3A1A75E8A2007C68AC /* LLVM.xcodeproj */;
 			proxyType = 1;
@@ -380,6 +391,7 @@
 		1F8DB0321A75E9EE007C68AC /* libLLVMInstCombine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMInstCombine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DB0491A75EA88007C68AC /* libLLVMScalarOpts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMScalarOpts.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DB0741A75EB2A007C68AC /* libLLVMipo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMipo.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8DB0931A75EB79007C68AC /* libLLVMVectorize.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMVectorize.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -412,6 +424,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F8DB0711A75EB2A007C68AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8DB0901A75EB79007C68AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -465,6 +484,7 @@
 				1F8DB0321A75E9EE007C68AC /* libLLVMInstCombine.a */,
 				1F8DB0491A75EA88007C68AC /* libLLVMScalarOpts.a */,
 				1F8DB0741A75EB2A007C68AC /* libLLVMipo.a */,
+				1F8DB0931A75EB79007C68AC /* libLLVMVectorize.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -702,6 +722,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F8DB0911A75EB79007C68AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -795,6 +822,24 @@
 			productReference = 1F8DB0741A75EB2A007C68AC /* libLLVMipo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F8DB0921A75EB79007C68AC /* LLVMVectorize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8DB0941A75EB79007C68AC /* Build configuration list for PBXNativeTarget "LLVMVectorize" */;
+			buildPhases = (
+				1F8DB08F1A75EB79007C68AC /* Sources */,
+				1F8DB0901A75EB79007C68AC /* Frameworks */,
+				1F8DB0911A75EB79007C68AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F8DB0981A75EB7F007C68AC /* PBXTargetDependency */,
+			);
+			name = LLVMVectorize;
+			productName = LLVMVectorize;
+			productReference = 1F8DB0931A75EB79007C68AC /* libLLVMVectorize.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -817,6 +862,9 @@
 						CreatedOnToolsVersion = 6.2;
 					};
 					1F8DB0731A75EB2A007C68AC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					1F8DB0921A75EB79007C68AC = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
@@ -844,6 +892,7 @@
 				1F8DB0311A75E9EE007C68AC /* LLVMInstCombine */,
 				1F8DB0481A75EA88007C68AC /* LLVMScalarOpts */,
 				1F8DB0731A75EB2A007C68AC /* LLVMipo */,
+				1F8DB0921A75EB79007C68AC /* LLVMVectorize */,
 			);
 		};
 /* End PBXProject section */
@@ -1081,6 +1130,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F8DB08F1A75EB79007C68AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8DB0991A75EB87007C68AC /* BBVectorize.cpp in Sources */,
+				1F8DB09A1A75EB87007C68AC /* LoopVectorize.cpp in Sources */,
+				1F8DB09B1A75EB87007C68AC /* SLPVectorizer.cpp in Sources */,
+				1F8DB09C1A75EB87007C68AC /* Vectorize.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1108,6 +1168,11 @@
 			isa = PBXTargetDependency;
 			name = Intrinsics.gen;
 			targetProxy = 1F8DB0781A75EB3C007C68AC /* PBXContainerItemProxy */;
+		};
+		1F8DB0981A75EB7F007C68AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Intrinsics.gen;
+			targetProxy = 1F8DB0971A75EB7F007C68AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1518,6 +1583,82 @@
 			};
 			name = Release;
 		};
+		1F8DB0951A75EB79007C68AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F8DB0961A75EB79007C68AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1567,6 +1708,14 @@
 			buildConfigurations = (
 				1F8DB0761A75EB2A007C68AC /* Debug */,
 				1F8DB0771A75EB2A007C68AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F8DB0941A75EB79007C68AC /* Build configuration list for PBXNativeTarget "LLVMVectorize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8DB0951A75EB79007C68AC /* Debug */,
+				1F8DB0961A75EB79007C68AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
