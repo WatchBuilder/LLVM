@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1F8DB2C11A75F385007C68AC /* X86CommonTableGen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1F8DB2C21A75F385007C68AC /* Build configuration list for PBXAggregateTarget "X86CommonTableGen" */;
+			buildPhases = (
+				1F8DB2C71A75F391007C68AC /* Generate X86 TableGen Data */,
+			);
+			dependencies = (
+				1F8DB2C61A75F38F007C68AC /* PBXTargetDependency */,
+			);
+			name = X86CommonTableGen;
+			productName = X86CommonTableGen;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXContainerItemProxy section */
+		1F8DB2931A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6816D31A75AE0400570C60;
+			remoteInfo = "llvm-tblgen";
+		};
+		1F8DB2951A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F292E321A759B0A00010E0D;
+			remoteInfo = LLVMSupport;
+		};
+		1F8DB2971A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6816C31A75AD9800570C60;
+			remoteInfo = LLVMTableGen;
+		};
+		1F8DB2991A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F68174A1A75B0AC00570C60;
+			remoteInfo = LLVMCore;
+		};
+		1F8DB29B1A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F6817831A75B13D00570C60;
+			remoteInfo = LLVMIRReader;
+		};
+		1F8DB29D1A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1FA6AD641A75D5F800997E31;
+			remoteInfo = LLVMSandboxSupport;
+		};
+		1F8DB29F1A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DAE141A75E23C007C68AC;
+			remoteInfo = LLVMTool_TableGen;
+		};
+		1F8DB2A11A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DAE511A75E594007C68AC;
+			remoteInfo = LLVMCodeGen;
+		};
+		1F8DB2A31A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DAED91A75E686007C68AC;
+			remoteInfo = LLVMSelectionDAG;
+		};
+		1F8DB2A51A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DAEFF1A75E721007C68AC;
+			remoteInfo = LLVMAsmPrinter;
+		};
+		1F8DB2A71A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DAF1D1A75E774007C68AC;
+			remoteInfo = LLVMBitReader;
+		};
+		1F8DB2A91A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DAF2A1A75E7BA007C68AC;
+			remoteInfo = LLVMBitWriter;
+		};
+		1F8DB2AB1A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB0B41A75EC43007C68AC;
+			remoteInfo = LLVMAnalysis;
+		};
+		1F8DB2AD1A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB0F11A75ED00007C68AC;
+			remoteInfo = LLVMipa;
+		};
+		1F8DB2AF1A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1021A75ED4F007C68AC;
+			remoteInfo = LLVMLTO;
+		};
+		1F8DB2B11A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB10C1A75ED93007C68AC;
+			remoteInfo = LLVMMC;
+		};
+		1F8DB2B31A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1481A75EF10007C68AC;
+			remoteInfo = LLVMMCParser;
+		};
+		1F8DB2B51A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1591A75EF4E007C68AC;
+			remoteInfo = LLVMMCDisassembler;
+		};
+		1F8DB2B71A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1621A75EF80007C68AC;
+			remoteInfo = LLVMObject;
+		};
+		1F8DB2B91A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1771A75EFC7007C68AC;
+			remoteInfo = LLVMOption;
+		};
+		1F8DB2BB1A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1831A75EFF9007C68AC;
+			remoteInfo = LLVMDebugInfo;
+		};
+		1F8DB2BD1A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB1A71A75F041007C68AC;
+			remoteInfo = LLVMAsmParser;
+		};
+		1F8DB2BF1A75F37C007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F8DB2631A75F27B007C68AC;
+			remoteInfo = LLVMTarget;
+		};
+		1F8DB2C51A75F38F007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F6816D21A75AE0400570C60;
+			remoteInfo = "llvm-tblgen";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LLVM.xcodeproj; path = ../../LLVM.xcodeproj; sourceTree = "<group>"; };
+		1F8DB2C91A75F3CB007C68AC /* X86CommonTableGen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = X86CommonTableGen.sh; path = ../../../xcodescripts/X86CommonTableGen.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1F8DB2701A75F342007C68AC = {
+			isa = PBXGroup;
+			children = (
+				1F8DB2C81A75F398007C68AC /* Build Scripts */,
+				1F8DB2771A75F374007C68AC /* References */,
+			);
+			sourceTree = "<group>";
+		};
+		1F8DB2771A75F374007C68AC /* References */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */,
+			);
+			name = References;
+			sourceTree = "<group>";
+		};
+		1F8DB2791A75F37C007C68AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB2941A75F37C007C68AC /* llvm-tblgen */,
+				1F8DB2961A75F37C007C68AC /* libLLVMSupport.a */,
+				1F8DB2981A75F37C007C68AC /* libLLVMTableGen.a */,
+				1F8DB29A1A75F37C007C68AC /* libLLVMCore.a */,
+				1F8DB29C1A75F37C007C68AC /* libLLVMIRReader.a */,
+				1F8DB29E1A75F37C007C68AC /* libLLVMSandboxSupport.a */,
+				1F8DB2A01A75F37C007C68AC /* libLLVMTool_TableGen.a */,
+				1F8DB2A21A75F37C007C68AC /* libLLVMCodeGen.a */,
+				1F8DB2A41A75F37C007C68AC /* libLLVMSelectionDAG.a */,
+				1F8DB2A61A75F37C007C68AC /* libLLVMAsmPrinter.a */,
+				1F8DB2A81A75F37C007C68AC /* libLLVMBitReader.a */,
+				1F8DB2AA1A75F37C007C68AC /* libLLVMBitWriter.a */,
+				1F8DB2AC1A75F37C007C68AC /* libLLVMAnalysis.a */,
+				1F8DB2AE1A75F37C007C68AC /* libLLVMipa.a */,
+				1F8DB2B01A75F37C007C68AC /* libLLVMLTO.a */,
+				1F8DB2B21A75F37C007C68AC /* libLLVMMC.a */,
+				1F8DB2B41A75F37C007C68AC /* libLLVMMCParser.a */,
+				1F8DB2B61A75F37C007C68AC /* libLLVMMCDisassembler.a */,
+				1F8DB2B81A75F37C007C68AC /* libLLVMObject.a */,
+				1F8DB2BA1A75F37C007C68AC /* libLLVMOption.a */,
+				1F8DB2BC1A75F37C007C68AC /* libLLVMDebugInfo.a */,
+				1F8DB2BE1A75F37C007C68AC /* libLLVMAsmParser.a */,
+				1F8DB2C01A75F37C007C68AC /* libLLVMTarget.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F8DB2C81A75F398007C68AC /* Build Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB2C91A75F3CB007C68AC /* X86CommonTableGen.sh */,
+			);
+			name = "Build Scripts";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		1F8DB2711A75F342007C68AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				TargetAttributes = {
+					1F8DB2C11A75F385007C68AC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 1F8DB2741A75F342007C68AC /* Build configuration list for PBXProject "LLVMTargetX86" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1F8DB2701A75F342007C68AC;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1F8DB2791A75F37C007C68AC /* Products */;
+					ProjectRef = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1F8DB2C11A75F385007C68AC /* X86CommonTableGen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1F8DB2941A75F37C007C68AC /* llvm-tblgen */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "llvm-tblgen";
+			remoteRef = 1F8DB2931A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2961A75F37C007C68AC /* libLLVMSupport.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMSupport.a;
+			remoteRef = 1F8DB2951A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2981A75F37C007C68AC /* libLLVMTableGen.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMTableGen.a;
+			remoteRef = 1F8DB2971A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB29A1A75F37C007C68AC /* libLLVMCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMCore.a;
+			remoteRef = 1F8DB2991A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB29C1A75F37C007C68AC /* libLLVMIRReader.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMIRReader.a;
+			remoteRef = 1F8DB29B1A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB29E1A75F37C007C68AC /* libLLVMSandboxSupport.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMSandboxSupport.a;
+			remoteRef = 1F8DB29D1A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2A01A75F37C007C68AC /* libLLVMTool_TableGen.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMTool_TableGen.a;
+			remoteRef = 1F8DB29F1A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2A21A75F37C007C68AC /* libLLVMCodeGen.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMCodeGen.a;
+			remoteRef = 1F8DB2A11A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2A41A75F37C007C68AC /* libLLVMSelectionDAG.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMSelectionDAG.a;
+			remoteRef = 1F8DB2A31A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2A61A75F37C007C68AC /* libLLVMAsmPrinter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMAsmPrinter.a;
+			remoteRef = 1F8DB2A51A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2A81A75F37C007C68AC /* libLLVMBitReader.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMBitReader.a;
+			remoteRef = 1F8DB2A71A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2AA1A75F37C007C68AC /* libLLVMBitWriter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMBitWriter.a;
+			remoteRef = 1F8DB2A91A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2AC1A75F37C007C68AC /* libLLVMAnalysis.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMAnalysis.a;
+			remoteRef = 1F8DB2AB1A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2AE1A75F37C007C68AC /* libLLVMipa.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMipa.a;
+			remoteRef = 1F8DB2AD1A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2B01A75F37C007C68AC /* libLLVMLTO.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMLTO.a;
+			remoteRef = 1F8DB2AF1A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2B21A75F37C007C68AC /* libLLVMMC.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMMC.a;
+			remoteRef = 1F8DB2B11A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2B41A75F37C007C68AC /* libLLVMMCParser.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMMCParser.a;
+			remoteRef = 1F8DB2B31A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2B61A75F37C007C68AC /* libLLVMMCDisassembler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMMCDisassembler.a;
+			remoteRef = 1F8DB2B51A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2B81A75F37C007C68AC /* libLLVMObject.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMObject.a;
+			remoteRef = 1F8DB2B71A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2BA1A75F37C007C68AC /* libLLVMOption.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMOption.a;
+			remoteRef = 1F8DB2B91A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2BC1A75F37C007C68AC /* libLLVMDebugInfo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMDebugInfo.a;
+			remoteRef = 1F8DB2BB1A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2BE1A75F37C007C68AC /* libLLVMAsmParser.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMAsmParser.a;
+			remoteRef = 1F8DB2BD1A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		1F8DB2C01A75F37C007C68AC /* libLLVMTarget.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLLVMTarget.a;
+			remoteRef = 1F8DB2BF1A75F37C007C68AC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F8DB2C71A75F391007C68AC /* Generate X86 TableGen Data */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate X86 TableGen Data";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${LLVM_PROJECT_ROOT}/xcodescripts/X86CommonTableGen.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F8DB2C61A75F38F007C68AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "llvm-tblgen";
+			targetProxy = 1F8DB2C51A75F38F007C68AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F8DB2751A75F342007C68AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LLVM_PROJECT_ROOT = "$(SRCROOT)/../../..";
+			};
+			name = Debug;
+		};
+		1F8DB2761A75F342007C68AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LLVM_PROJECT_ROOT = "$(SRCROOT)/../../..";
+			};
+			name = Release;
+		};
+		1F8DB2C31A75F385007C68AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F8DB2C41A75F385007C68AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F8DB2741A75F342007C68AC /* Build configuration list for PBXProject "LLVMTargetX86" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8DB2751A75F342007C68AC /* Debug */,
+				1F8DB2761A75F342007C68AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F8DB2C21A75F385007C68AC /* Build configuration list for PBXAggregateTarget "X86CommonTableGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8DB2C31A75F385007C68AC /* Debug */,
+				1F8DB2C41A75F385007C68AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F8DB2711A75F342007C68AC /* Project object */;
+}

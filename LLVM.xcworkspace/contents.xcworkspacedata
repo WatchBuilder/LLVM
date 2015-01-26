@@ -10,4 +10,7 @@
    <FileRef
       location = "group:lib/ExecutionEngine/LLVMExecutionEngine.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:lib/Target/X86/LLVMTargetX86.xcodeproj">
+   </FileRef>
 </Workspace>
