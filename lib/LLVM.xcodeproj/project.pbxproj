@@ -115,41 +115,6 @@
 		1F6816CB1A75ADBD00570C60 /* TableGenBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2927981A759ABE00010E0D /* TableGenBackend.cpp */; };
 		1F6816CC1A75ADBD00570C60 /* TGLexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2927991A759ABE00010E0D /* TGLexer.cpp */; };
 		1F6816CD1A75ADBD00570C60 /* TGParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F29279B1A759ABE00010E0D /* TGParser.cpp */; };
-		1F6816DE1A75AE1700570C60 /* libLLVMSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F292E321A759B0A00010E0D /* libLLVMSupport.a */; };
-		1F6816DF1A75AE1700570C60 /* libLLVMTableGen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6816C31A75AD9800570C60 /* libLLVMTableGen.a */; };
-		1F6817121A75AE7600570C60 /* AsmMatcherEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E11A75AE7600570C60 /* AsmMatcherEmitter.cpp */; };
-		1F6817131A75AE7600570C60 /* AsmWriterEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E21A75AE7600570C60 /* AsmWriterEmitter.cpp */; };
-		1F6817141A75AE7600570C60 /* AsmWriterInst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E31A75AE7600570C60 /* AsmWriterInst.cpp */; };
-		1F6817151A75AE7600570C60 /* CallingConvEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E51A75AE7600570C60 /* CallingConvEmitter.cpp */; };
-		1F6817161A75AE7600570C60 /* CodeEmitterGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E61A75AE7600570C60 /* CodeEmitterGen.cpp */; };
-		1F6817171A75AE7600570C60 /* CodeGenDAGPatterns.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E71A75AE7600570C60 /* CodeGenDAGPatterns.cpp */; };
-		1F6817181A75AE7600570C60 /* CodeGenInstruction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E91A75AE7600570C60 /* CodeGenInstruction.cpp */; };
-		1F6817191A75AE7600570C60 /* CodeGenMapTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816EC1A75AE7600570C60 /* CodeGenMapTable.cpp */; };
-		1F68171A1A75AE7600570C60 /* CodeGenRegisters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816ED1A75AE7600570C60 /* CodeGenRegisters.cpp */; };
-		1F68171B1A75AE7600570C60 /* CodeGenSchedule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816EF1A75AE7600570C60 /* CodeGenSchedule.cpp */; };
-		1F68171C1A75AE7600570C60 /* CodeGenTarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F11A75AE7600570C60 /* CodeGenTarget.cpp */; };
-		1F68171D1A75AE7600570C60 /* CTagsEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F31A75AE7600570C60 /* CTagsEmitter.cpp */; };
-		1F68171E1A75AE7600570C60 /* DAGISelEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F41A75AE7600570C60 /* DAGISelEmitter.cpp */; };
-		1F68171F1A75AE7600570C60 /* DAGISelMatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F51A75AE7600570C60 /* DAGISelMatcher.cpp */; };
-		1F6817201A75AE7600570C60 /* DAGISelMatcherEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F71A75AE7600570C60 /* DAGISelMatcherEmitter.cpp */; };
-		1F6817211A75AE7600570C60 /* DAGISelMatcherGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F81A75AE7600570C60 /* DAGISelMatcherGen.cpp */; };
-		1F6817221A75AE7600570C60 /* DAGISelMatcherOpt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F91A75AE7600570C60 /* DAGISelMatcherOpt.cpp */; };
-		1F6817231A75AE7600570C60 /* DFAPacketizerEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816FA1A75AE7600570C60 /* DFAPacketizerEmitter.cpp */; };
-		1F6817241A75AE7600570C60 /* DisassemblerEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816FB1A75AE7600570C60 /* DisassemblerEmitter.cpp */; };
-		1F6817251A75AE7600570C60 /* FastISelEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816FC1A75AE7600570C60 /* FastISelEmitter.cpp */; };
-		1F6817261A75AE7600570C60 /* FixedLenDecoderEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816FD1A75AE7600570C60 /* FixedLenDecoderEmitter.cpp */; };
-		1F6817271A75AE7600570C60 /* InstrInfoEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816FE1A75AE7600570C60 /* InstrInfoEmitter.cpp */; };
-		1F6817281A75AE7600570C60 /* IntrinsicEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816FF1A75AE7600570C60 /* IntrinsicEmitter.cpp */; };
-		1F6817291A75AE7600570C60 /* OptParserEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817001A75AE7600570C60 /* OptParserEmitter.cpp */; };
-		1F68172A1A75AE7600570C60 /* PseudoLoweringEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817011A75AE7600570C60 /* PseudoLoweringEmitter.cpp */; };
-		1F68172B1A75AE7600570C60 /* RegisterInfoEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817021A75AE7600570C60 /* RegisterInfoEmitter.cpp */; };
-		1F68172C1A75AE7600570C60 /* SetTheory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817041A75AE7600570C60 /* SetTheory.cpp */; };
-		1F68172D1A75AE7600570C60 /* SubtargetEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817061A75AE7600570C60 /* SubtargetEmitter.cpp */; };
-		1F68172E1A75AE7600570C60 /* TableGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817071A75AE7600570C60 /* TableGen.cpp */; };
-		1F68172F1A75AE7600570C60 /* TGValueTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F68170A1A75AE7600570C60 /* TGValueTypes.cpp */; };
-		1F6817301A75AE7600570C60 /* X86DisassemblerTables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F68170C1A75AE7600570C60 /* X86DisassemblerTables.cpp */; };
-		1F6817311A75AE7600570C60 /* X86ModRMFilters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F68170E1A75AE7600570C60 /* X86ModRMFilters.cpp */; };
-		1F6817321A75AE7600570C60 /* X86RecognizableInstr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817101A75AE7600570C60 /* X86RecognizableInstr.cpp */; };
 		1F6817341A75AEA300570C60 /* libcurses.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6817331A75AEA300570C60 /* libcurses.dylib */; };
 		1F6817501A75B0BE00570C60 /* AsmWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F29268A1A759ABE00010E0D /* AsmWriter.cpp */; };
 		1F6817531A75B0BE00570C60 /* Attributes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F29268D1A759ABE00010E0D /* Attributes.cpp */; };
@@ -194,6 +159,43 @@
 		1F6817871A75B16000570C60 /* IRReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2926BA1A759ABE00010E0D /* IRReader.cpp */; };
 		1F8DAE0C1A75DA8A007C68AC /* SandboxExec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAE0B1A75DA8A007C68AC /* SandboxExec.cpp */; };
 		1F8DAE0D1A75DF13007C68AC /* libLLVMSandboxSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA6AD641A75D5F800997E31 /* libLLVMSandboxSupport.a */; };
+		1F8DAE181A75E24D007C68AC /* libLLVMSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F292E321A759B0A00010E0D /* libLLVMSupport.a */; };
+		1F8DAE191A75E24D007C68AC /* libLLVMTableGen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6816C31A75AD9800570C60 /* libLLVMTableGen.a */; };
+		1F8DAE1A1A75E255007C68AC /* AsmMatcherEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E11A75AE7600570C60 /* AsmMatcherEmitter.cpp */; };
+		1F8DAE1B1A75E255007C68AC /* AsmWriterEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E21A75AE7600570C60 /* AsmWriterEmitter.cpp */; };
+		1F8DAE1C1A75E255007C68AC /* AsmWriterInst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E31A75AE7600570C60 /* AsmWriterInst.cpp */; };
+		1F8DAE1E1A75E255007C68AC /* CallingConvEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E51A75AE7600570C60 /* CallingConvEmitter.cpp */; };
+		1F8DAE1F1A75E255007C68AC /* CodeEmitterGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E61A75AE7600570C60 /* CodeEmitterGen.cpp */; };
+		1F8DAE201A75E255007C68AC /* CodeGenDAGPatterns.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E71A75AE7600570C60 /* CodeGenDAGPatterns.cpp */; };
+		1F8DAE221A75E255007C68AC /* CodeGenInstruction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816E91A75AE7600570C60 /* CodeGenInstruction.cpp */; };
+		1F8DAE251A75E255007C68AC /* CodeGenMapTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816EC1A75AE7600570C60 /* CodeGenMapTable.cpp */; };
+		1F8DAE261A75E255007C68AC /* CodeGenRegisters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816ED1A75AE7600570C60 /* CodeGenRegisters.cpp */; };
+		1F8DAE281A75E255007C68AC /* CodeGenSchedule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816EF1A75AE7600570C60 /* CodeGenSchedule.cpp */; };
+		1F8DAE2A1A75E255007C68AC /* CodeGenTarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F11A75AE7600570C60 /* CodeGenTarget.cpp */; };
+		1F8DAE2C1A75E255007C68AC /* CTagsEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F31A75AE7600570C60 /* CTagsEmitter.cpp */; };
+		1F8DAE2D1A75E255007C68AC /* DAGISelEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F41A75AE7600570C60 /* DAGISelEmitter.cpp */; };
+		1F8DAE2E1A75E255007C68AC /* DAGISelMatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F51A75AE7600570C60 /* DAGISelMatcher.cpp */; };
+		1F8DAE301A75E255007C68AC /* DAGISelMatcherEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F71A75AE7600570C60 /* DAGISelMatcherEmitter.cpp */; };
+		1F8DAE311A75E255007C68AC /* DAGISelMatcherGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F81A75AE7600570C60 /* DAGISelMatcherGen.cpp */; };
+		1F8DAE321A75E255007C68AC /* DAGISelMatcherOpt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816F91A75AE7600570C60 /* DAGISelMatcherOpt.cpp */; };
+		1F8DAE331A75E255007C68AC /* DFAPacketizerEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816FA1A75AE7600570C60 /* DFAPacketizerEmitter.cpp */; };
+		1F8DAE341A75E255007C68AC /* DisassemblerEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816FB1A75AE7600570C60 /* DisassemblerEmitter.cpp */; };
+		1F8DAE351A75E255007C68AC /* FastISelEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816FC1A75AE7600570C60 /* FastISelEmitter.cpp */; };
+		1F8DAE361A75E255007C68AC /* FixedLenDecoderEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816FD1A75AE7600570C60 /* FixedLenDecoderEmitter.cpp */; };
+		1F8DAE371A75E255007C68AC /* InstrInfoEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816FE1A75AE7600570C60 /* InstrInfoEmitter.cpp */; };
+		1F8DAE381A75E255007C68AC /* IntrinsicEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6816FF1A75AE7600570C60 /* IntrinsicEmitter.cpp */; };
+		1F8DAE391A75E255007C68AC /* OptParserEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817001A75AE7600570C60 /* OptParserEmitter.cpp */; };
+		1F8DAE3A1A75E255007C68AC /* PseudoLoweringEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817011A75AE7600570C60 /* PseudoLoweringEmitter.cpp */; };
+		1F8DAE3B1A75E255007C68AC /* RegisterInfoEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817021A75AE7600570C60 /* RegisterInfoEmitter.cpp */; };
+		1F8DAE3D1A75E255007C68AC /* SetTheory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817041A75AE7600570C60 /* SetTheory.cpp */; };
+		1F8DAE3F1A75E255007C68AC /* SubtargetEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817061A75AE7600570C60 /* SubtargetEmitter.cpp */; };
+		1F8DAE401A75E255007C68AC /* TableGen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817071A75AE7600570C60 /* TableGen.cpp */; };
+		1F8DAE421A75E255007C68AC /* TGValueTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F68170A1A75AE7600570C60 /* TGValueTypes.cpp */; };
+		1F8DAE441A75E255007C68AC /* X86DisassemblerTables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F68170C1A75AE7600570C60 /* X86DisassemblerTables.cpp */; };
+		1F8DAE461A75E255007C68AC /* X86ModRMFilters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F68170E1A75AE7600570C60 /* X86ModRMFilters.cpp */; };
+		1F8DAE481A75E255007C68AC /* X86RecognizableInstr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F6817101A75AE7600570C60 /* X86RecognizableInstr.cpp */; };
+		1F8DAE4A1A75E266007C68AC /* libLLVMTool_TableGen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8DAE141A75E23C007C68AC /* libLLVMTool_TableGen.a */; };
+		1F8DAE4C1A75E32E007C68AC /* shim_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAE4B1A75E32E007C68AC /* shim_main.cpp */; };
 		1FA6AD6C1A75D67500997E31 /* SandboxExec.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA6AD6A1A75D67500997E31 /* SandboxExec.h */; };
 		1FA6AD6D1A75D67500997E31 /* SandboxIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA6AD6B1A75D67500997E31 /* SandboxIO.h */; };
 		1FA6AD701A75D69A00997E31 /* SandboxIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6AD6F1A75D69A00997E31 /* SandboxIO.cpp */; };
@@ -2437,6 +2439,8 @@
 		1F68174A1A75B0AC00570C60 /* libLLVMCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6817831A75B13D00570C60 /* libLLVMIRReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMIRReader.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DAE0B1A75DA8A007C68AC /* SandboxExec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SandboxExec.cpp; sourceTree = "<group>"; };
+		1F8DAE141A75E23C007C68AC /* libLLVMTool_TableGen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMTool_TableGen.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8DAE4B1A75E32E007C68AC /* shim_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shim_main.cpp; path = ../tools/shim_main.cpp; sourceTree = "<group>"; };
 		1FA6AD641A75D5F800997E31 /* libLLVMSandboxSupport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMSandboxSupport.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA6AD6A1A75D67500997E31 /* SandboxExec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandboxExec.h; sourceTree = "<group>"; };
 		1FA6AD6B1A75D67500997E31 /* SandboxIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SandboxIO.h; sourceTree = "<group>"; };
@@ -2463,9 +2467,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8DAE4A1A75E266007C68AC /* libLLVMTool_TableGen.a in Frameworks */,
 				1F6817341A75AEA300570C60 /* libcurses.dylib in Frameworks */,
-				1F6816DE1A75AE1700570C60 /* libLLVMSupport.a in Frameworks */,
-				1F6816DF1A75AE1700570C60 /* libLLVMTableGen.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2480,6 +2483,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8DAE111A75E23C007C68AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8DAE181A75E24D007C68AC /* libLLVMSupport.a in Frameworks */,
+				1F8DAE191A75E24D007C68AC /* libLLVMTableGen.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5755,6 +5767,7 @@
 				1F68174A1A75B0AC00570C60 /* libLLVMCore.a */,
 				1F6817831A75B13D00570C60 /* libLLVMIRReader.a */,
 				1FA6AD641A75D5F800997E31 /* libLLVMSandboxSupport.a */,
+				1F8DAE141A75E23C007C68AC /* libLLVMTool_TableGen.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -5762,6 +5775,7 @@
 		1F6816CE1A75ADDF00570C60 /* tools */ = {
 			isa = PBXGroup;
 			children = (
+				1F8DAE4B1A75E32E007C68AC /* shim_main.cpp */,
 				1F6816E01A75AE7600570C60 /* TableGen */,
 			);
 			name = tools;
@@ -5890,6 +5904,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F8DAE121A75E23C007C68AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FA6AD621A75D5F800997E31 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -5990,6 +6011,23 @@
 			productReference = 1F6817831A75B13D00570C60 /* libLLVMIRReader.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F8DAE131A75E23C007C68AC /* LLVMTool_TableGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8DAE151A75E23C007C68AC /* Build configuration list for PBXNativeTarget "LLVMTool_TableGen" */;
+			buildPhases = (
+				1F8DAE101A75E23C007C68AC /* Sources */,
+				1F8DAE111A75E23C007C68AC /* Frameworks */,
+				1F8DAE121A75E23C007C68AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLVMTool_TableGen;
+			productName = LLVMTool_TableGen;
+			productReference = 1F8DAE141A75E23C007C68AC /* libLLVMTool_TableGen.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		1FA6AD631A75D5F800997E31 /* LLVMSandboxSupport */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FA6AD671A75D5F800997E31 /* Build configuration list for PBXNativeTarget "LLVMSandboxSupport" */;
@@ -6034,6 +6072,9 @@
 					1F6817821A75B13D00570C60 = {
 						CreatedOnToolsVersion = 6.2;
 					};
+					1F8DAE131A75E23C007C68AC = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					1FA6AD631A75D5F800997E31 = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -6058,6 +6099,7 @@
 				1F6817491A75B0AC00570C60 /* LLVMCore */,
 				1F6817821A75B13D00570C60 /* LLVMIRReader */,
 				1FA6AD631A75D5F800997E31 /* LLVMSandboxSupport */,
+				1F8DAE131A75E23C007C68AC /* LLVMTool_TableGen */,
 			);
 		};
 /* End PBXProject section */
@@ -6192,39 +6234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F6817121A75AE7600570C60 /* AsmMatcherEmitter.cpp in Sources */,
-				1F6817321A75AE7600570C60 /* X86RecognizableInstr.cpp in Sources */,
-				1F6817251A75AE7600570C60 /* FastISelEmitter.cpp in Sources */,
-				1F6817311A75AE7600570C60 /* X86ModRMFilters.cpp in Sources */,
-				1F6817171A75AE7600570C60 /* CodeGenDAGPatterns.cpp in Sources */,
-				1F6817161A75AE7600570C60 /* CodeEmitterGen.cpp in Sources */,
-				1F68171A1A75AE7600570C60 /* CodeGenRegisters.cpp in Sources */,
-				1F6817181A75AE7600570C60 /* CodeGenInstruction.cpp in Sources */,
-				1F68171D1A75AE7600570C60 /* CTagsEmitter.cpp in Sources */,
-				1F68172B1A75AE7600570C60 /* RegisterInfoEmitter.cpp in Sources */,
-				1F6817151A75AE7600570C60 /* CallingConvEmitter.cpp in Sources */,
-				1F68171B1A75AE7600570C60 /* CodeGenSchedule.cpp in Sources */,
-				1F6817131A75AE7600570C60 /* AsmWriterEmitter.cpp in Sources */,
-				1F6817141A75AE7600570C60 /* AsmWriterInst.cpp in Sources */,
-				1F68171F1A75AE7600570C60 /* DAGISelMatcher.cpp in Sources */,
-				1F6817221A75AE7600570C60 /* DAGISelMatcherOpt.cpp in Sources */,
-				1F6817231A75AE7600570C60 /* DFAPacketizerEmitter.cpp in Sources */,
-				1F6817241A75AE7600570C60 /* DisassemblerEmitter.cpp in Sources */,
-				1F68172F1A75AE7600570C60 /* TGValueTypes.cpp in Sources */,
-				1F6817291A75AE7600570C60 /* OptParserEmitter.cpp in Sources */,
-				1F68172C1A75AE7600570C60 /* SetTheory.cpp in Sources */,
-				1F6817301A75AE7600570C60 /* X86DisassemblerTables.cpp in Sources */,
-				1F68172A1A75AE7600570C60 /* PseudoLoweringEmitter.cpp in Sources */,
-				1F6817281A75AE7600570C60 /* IntrinsicEmitter.cpp in Sources */,
-				1F68171E1A75AE7600570C60 /* DAGISelEmitter.cpp in Sources */,
-				1F6817191A75AE7600570C60 /* CodeGenMapTable.cpp in Sources */,
-				1F6817211A75AE7600570C60 /* DAGISelMatcherGen.cpp in Sources */,
-				1F6817261A75AE7600570C60 /* FixedLenDecoderEmitter.cpp in Sources */,
-				1F68172D1A75AE7600570C60 /* SubtargetEmitter.cpp in Sources */,
-				1F6817201A75AE7600570C60 /* DAGISelMatcherEmitter.cpp in Sources */,
-				1F68172E1A75AE7600570C60 /* TableGen.cpp in Sources */,
-				1F68171C1A75AE7600570C60 /* CodeGenTarget.cpp in Sources */,
-				1F6817271A75AE7600570C60 /* InstrInfoEmitter.cpp in Sources */,
+				1F8DAE4C1A75E32E007C68AC /* shim_main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6280,6 +6290,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F6817871A75B16000570C60 /* IRReader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8DAE101A75E23C007C68AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8DAE1A1A75E255007C68AC /* AsmMatcherEmitter.cpp in Sources */,
+				1F8DAE1B1A75E255007C68AC /* AsmWriterEmitter.cpp in Sources */,
+				1F8DAE1C1A75E255007C68AC /* AsmWriterInst.cpp in Sources */,
+				1F8DAE1E1A75E255007C68AC /* CallingConvEmitter.cpp in Sources */,
+				1F8DAE1F1A75E255007C68AC /* CodeEmitterGen.cpp in Sources */,
+				1F8DAE201A75E255007C68AC /* CodeGenDAGPatterns.cpp in Sources */,
+				1F8DAE221A75E255007C68AC /* CodeGenInstruction.cpp in Sources */,
+				1F8DAE251A75E255007C68AC /* CodeGenMapTable.cpp in Sources */,
+				1F8DAE261A75E255007C68AC /* CodeGenRegisters.cpp in Sources */,
+				1F8DAE281A75E255007C68AC /* CodeGenSchedule.cpp in Sources */,
+				1F8DAE2A1A75E255007C68AC /* CodeGenTarget.cpp in Sources */,
+				1F8DAE2C1A75E255007C68AC /* CTagsEmitter.cpp in Sources */,
+				1F8DAE2D1A75E255007C68AC /* DAGISelEmitter.cpp in Sources */,
+				1F8DAE2E1A75E255007C68AC /* DAGISelMatcher.cpp in Sources */,
+				1F8DAE301A75E255007C68AC /* DAGISelMatcherEmitter.cpp in Sources */,
+				1F8DAE311A75E255007C68AC /* DAGISelMatcherGen.cpp in Sources */,
+				1F8DAE321A75E255007C68AC /* DAGISelMatcherOpt.cpp in Sources */,
+				1F8DAE331A75E255007C68AC /* DFAPacketizerEmitter.cpp in Sources */,
+				1F8DAE341A75E255007C68AC /* DisassemblerEmitter.cpp in Sources */,
+				1F8DAE351A75E255007C68AC /* FastISelEmitter.cpp in Sources */,
+				1F8DAE361A75E255007C68AC /* FixedLenDecoderEmitter.cpp in Sources */,
+				1F8DAE371A75E255007C68AC /* InstrInfoEmitter.cpp in Sources */,
+				1F8DAE381A75E255007C68AC /* IntrinsicEmitter.cpp in Sources */,
+				1F8DAE391A75E255007C68AC /* OptParserEmitter.cpp in Sources */,
+				1F8DAE3A1A75E255007C68AC /* PseudoLoweringEmitter.cpp in Sources */,
+				1F8DAE3B1A75E255007C68AC /* RegisterInfoEmitter.cpp in Sources */,
+				1F8DAE3D1A75E255007C68AC /* SetTheory.cpp in Sources */,
+				1F8DAE3F1A75E255007C68AC /* SubtargetEmitter.cpp in Sources */,
+				1F8DAE401A75E255007C68AC /* TableGen.cpp in Sources */,
+				1F8DAE421A75E255007C68AC /* TGValueTypes.cpp in Sources */,
+				1F8DAE441A75E255007C68AC /* X86DisassemblerTables.cpp in Sources */,
+				1F8DAE461A75E255007C68AC /* X86ModRMFilters.cpp in Sources */,
+				1F8DAE481A75E255007C68AC /* X86RecognizableInstr.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6531,6 +6581,10 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_TOOL_MAIN_FUNCTION=tblgen_main",
+					"$(inherited)",
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -6567,6 +6621,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_TOOL_MAIN_FUNCTION=tblgen_main",
 					"NDEBUG=1",
 					"$(inherited)",
 				);
@@ -6708,6 +6763,81 @@
 			name = Debug;
 		};
 		1F6817861A75B13D00570C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1F8DAE161A75E23C007C68AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F8DAE171A75E23C007C68AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -6888,6 +7018,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1F8DAE151A75E23C007C68AC /* Build configuration list for PBXNativeTarget "LLVMTool_TableGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8DAE161A75E23C007C68AC /* Debug */,
+				1F8DAE171A75E23C007C68AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		1FA6AD671A75D5F800997E31 /* Build configuration list for PBXNativeTarget "LLVMSandboxSupport" */ = {
 			isa = XCConfigurationList;

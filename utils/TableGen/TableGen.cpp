@@ -173,10 +173,12 @@ bool LLVMTableGenMain(raw_ostream &OS, RecordKeeper &Records) {
 }
 }
 
-int main(int argc, char **argv) {
-  sys::PrintStackTraceOnErrorSignal();
-  PrettyStackTraceProgram X(argc, argv);
-  cl::ParseCommandLineOptions(argc, argv);
-
-  return TableGenMain(argv[0], &LLVMTableGenMain);
+namespace llvm_tool {
+    int tblgen_main(int argc, const char **argv) {
+        sys::PrintStackTraceOnErrorSignal();
+        PrettyStackTraceProgram X(argc, argv);
+        cl::ParseCommandLineOptions(argc, argv);
+        
+        return TableGenMain((char *)argv[0], &LLVMTableGenMain);
+    }
 }
