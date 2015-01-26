@@ -21,6 +21,30 @@
 		};
 /* End PBXAggregateTarget section */
 
+/* Begin PBXBuildFile section */
+		1F8DB33C1A75F621007C68AC /* X86AsmPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB2EF1A75F5C8007C68AC /* X86AsmPrinter.cpp */; };
+		1F8DB33E1A75F621007C68AC /* X86CodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB2F21A75F5C8007C68AC /* X86CodeEmitter.cpp */; };
+		1F8DB33F1A75F621007C68AC /* X86COFFMachineModuleInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB2F31A75F5C8007C68AC /* X86COFFMachineModuleInfo.cpp */; };
+		1F8DB3411A75F621007C68AC /* X86FastISel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB2F51A75F5C8007C68AC /* X86FastISel.cpp */; };
+		1F8DB3421A75F621007C68AC /* X86FixupLEAs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB2F61A75F5C8007C68AC /* X86FixupLEAs.cpp */; };
+		1F8DB3431A75F621007C68AC /* X86FloatingPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB2F71A75F5C8007C68AC /* X86FloatingPoint.cpp */; };
+		1F8DB3441A75F621007C68AC /* X86FrameLowering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB2F81A75F5C8007C68AC /* X86FrameLowering.cpp */; };
+		1F8DB3471A75F621007C68AC /* X86InstrInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB3061A75F5C8007C68AC /* X86InstrInfo.cpp */; };
+		1F8DB3491A75F621007C68AC /* X86ISelDAGToDAG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB3111A75F5C8007C68AC /* X86ISelDAGToDAG.cpp */; };
+		1F8DB34A1A75F621007C68AC /* X86ISelLowering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB3121A75F5C8007C68AC /* X86ISelLowering.cpp */; };
+		1F8DB34C1A75F621007C68AC /* X86JITInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB3141A75F5C8007C68AC /* X86JITInfo.cpp */; };
+		1F8DB34E1A75F621007C68AC /* X86MachineFunctionInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB3161A75F5C8007C68AC /* X86MachineFunctionInfo.cpp */; };
+		1F8DB3501A75F621007C68AC /* X86MCInstLower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB3181A75F5C8007C68AC /* X86MCInstLower.cpp */; };
+		1F8DB3511A75F621007C68AC /* X86PadShortFunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB3191A75F5C8007C68AC /* X86PadShortFunction.cpp */; };
+		1F8DB3521A75F621007C68AC /* X86RegisterInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB31A1A75F5C8007C68AC /* X86RegisterInfo.cpp */; };
+		1F8DB3551A75F621007C68AC /* X86SelectionDAGInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB3231A75F5C8007C68AC /* X86SelectionDAGInfo.cpp */; };
+		1F8DB3571A75F621007C68AC /* X86Subtarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB3251A75F5C8007C68AC /* X86Subtarget.cpp */; };
+		1F8DB3591A75F621007C68AC /* X86TargetMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB3271A75F5C8007C68AC /* X86TargetMachine.cpp */; };
+		1F8DB35B1A75F621007C68AC /* X86TargetObjectFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB3291A75F5C8007C68AC /* X86TargetObjectFile.cpp */; };
+		1F8DB35D1A75F621007C68AC /* X86TargetTransformInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB32B1A75F5C8007C68AC /* X86TargetTransformInfo.cpp */; };
+		1F8DB35E1A75F621007C68AC /* X86VZeroUpper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB32C1A75F5C8007C68AC /* X86VZeroUpper.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1F8DB2931A75F37C007C68AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -190,19 +214,138 @@
 			remoteGlobalIDString = 1F6816D21A75AE0400570C60;
 			remoteInfo = "llvm-tblgen";
 		};
+		1F8DB3381A75F613007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2711A75F342007C68AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F8DB2C11A75F385007C68AC;
+			remoteInfo = X86CommonTableGen;
+		};
+		1F8DB33A1A75F613007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F68173E1A75AFA500570C60;
+			remoteInfo = Intrinsics.gen;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1F8DB2781A75F37C007C68AC /* LLVM.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LLVM.xcodeproj; path = ../../LLVM.xcodeproj; sourceTree = "<group>"; };
 		1F8DB2C91A75F3CB007C68AC /* X86CommonTableGen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = X86CommonTableGen.sh; path = ../../../xcodescripts/X86CommonTableGen.sh; sourceTree = "<group>"; };
+		1F8DB2CC1A75F5C8007C68AC /* X86AsmParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86AsmParser.cpp; sourceTree = "<group>"; };
+		1F8DB2CE1A75F5C8007C68AC /* X86Disassembler.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86Disassembler.cpp; sourceTree = "<group>"; };
+		1F8DB2CF1A75F5C8007C68AC /* X86Disassembler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86Disassembler.h; sourceTree = "<group>"; };
+		1F8DB2D01A75F5C8007C68AC /* X86DisassemblerDecoder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = X86DisassemblerDecoder.c; sourceTree = "<group>"; };
+		1F8DB2D11A75F5C8007C68AC /* X86DisassemblerDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86DisassemblerDecoder.h; sourceTree = "<group>"; };
+		1F8DB2D21A75F5C8007C68AC /* X86DisassemblerDecoderCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86DisassemblerDecoderCommon.h; sourceTree = "<group>"; };
+		1F8DB2D41A75F5C8007C68AC /* X86ATTInstPrinter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86ATTInstPrinter.cpp; sourceTree = "<group>"; };
+		1F8DB2D51A75F5C8007C68AC /* X86ATTInstPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86ATTInstPrinter.h; sourceTree = "<group>"; };
+		1F8DB2D61A75F5C8007C68AC /* X86InstComments.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86InstComments.cpp; sourceTree = "<group>"; };
+		1F8DB2D71A75F5C8007C68AC /* X86InstComments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86InstComments.h; sourceTree = "<group>"; };
+		1F8DB2D81A75F5C8007C68AC /* X86IntelInstPrinter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86IntelInstPrinter.cpp; sourceTree = "<group>"; };
+		1F8DB2D91A75F5C8007C68AC /* X86IntelInstPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86IntelInstPrinter.h; sourceTree = "<group>"; };
+		1F8DB2DB1A75F5C8007C68AC /* X86AsmBackend.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86AsmBackend.cpp; sourceTree = "<group>"; };
+		1F8DB2DC1A75F5C8007C68AC /* X86BaseInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86BaseInfo.h; sourceTree = "<group>"; };
+		1F8DB2DD1A75F5C8007C68AC /* X86ELFObjectWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86ELFObjectWriter.cpp; sourceTree = "<group>"; };
+		1F8DB2DE1A75F5C8007C68AC /* X86ELFRelocationInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86ELFRelocationInfo.cpp; sourceTree = "<group>"; };
+		1F8DB2DF1A75F5C8007C68AC /* X86FixupKinds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86FixupKinds.h; sourceTree = "<group>"; };
+		1F8DB2E01A75F5C8007C68AC /* X86MachObjectWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86MachObjectWriter.cpp; sourceTree = "<group>"; };
+		1F8DB2E11A75F5C8007C68AC /* X86MachORelocationInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86MachORelocationInfo.cpp; sourceTree = "<group>"; };
+		1F8DB2E21A75F5C8007C68AC /* X86MCAsmInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86MCAsmInfo.cpp; sourceTree = "<group>"; };
+		1F8DB2E31A75F5C8007C68AC /* X86MCAsmInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86MCAsmInfo.h; sourceTree = "<group>"; };
+		1F8DB2E41A75F5C8007C68AC /* X86MCCodeEmitter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86MCCodeEmitter.cpp; sourceTree = "<group>"; };
+		1F8DB2E51A75F5C8007C68AC /* X86MCTargetDesc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86MCTargetDesc.cpp; sourceTree = "<group>"; };
+		1F8DB2E61A75F5C8007C68AC /* X86MCTargetDesc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86MCTargetDesc.h; sourceTree = "<group>"; };
+		1F8DB2E71A75F5C8007C68AC /* X86WinCOFFObjectWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86WinCOFFObjectWriter.cpp; sourceTree = "<group>"; };
+		1F8DB2E91A75F5C8007C68AC /* X86TargetInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86TargetInfo.cpp; sourceTree = "<group>"; };
+		1F8DB2EB1A75F5C8007C68AC /* X86ShuffleDecode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86ShuffleDecode.cpp; sourceTree = "<group>"; };
+		1F8DB2EC1A75F5C8007C68AC /* X86ShuffleDecode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86ShuffleDecode.h; sourceTree = "<group>"; };
+		1F8DB2ED1A75F5C8007C68AC /* X86.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86.h; sourceTree = "<group>"; };
+		1F8DB2EE1A75F5C8007C68AC /* X86.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86.td; sourceTree = "<group>"; };
+		1F8DB2EF1A75F5C8007C68AC /* X86AsmPrinter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86AsmPrinter.cpp; sourceTree = "<group>"; };
+		1F8DB2F01A75F5C8007C68AC /* X86AsmPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86AsmPrinter.h; sourceTree = "<group>"; };
+		1F8DB2F11A75F5C8007C68AC /* X86CallingConv.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86CallingConv.td; sourceTree = "<group>"; };
+		1F8DB2F21A75F5C8007C68AC /* X86CodeEmitter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86CodeEmitter.cpp; sourceTree = "<group>"; };
+		1F8DB2F31A75F5C8007C68AC /* X86COFFMachineModuleInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86COFFMachineModuleInfo.cpp; sourceTree = "<group>"; };
+		1F8DB2F41A75F5C8007C68AC /* X86COFFMachineModuleInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86COFFMachineModuleInfo.h; sourceTree = "<group>"; };
+		1F8DB2F51A75F5C8007C68AC /* X86FastISel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86FastISel.cpp; sourceTree = "<group>"; };
+		1F8DB2F61A75F5C8007C68AC /* X86FixupLEAs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86FixupLEAs.cpp; sourceTree = "<group>"; };
+		1F8DB2F71A75F5C8007C68AC /* X86FloatingPoint.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86FloatingPoint.cpp; sourceTree = "<group>"; };
+		1F8DB2F81A75F5C8007C68AC /* X86FrameLowering.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86FrameLowering.cpp; sourceTree = "<group>"; };
+		1F8DB2F91A75F5C8007C68AC /* X86FrameLowering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86FrameLowering.h; sourceTree = "<group>"; };
+		1F8DB2FA1A75F5C8007C68AC /* X86Instr3DNow.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86Instr3DNow.td; sourceTree = "<group>"; };
+		1F8DB2FB1A75F5C8007C68AC /* X86InstrArithmetic.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrArithmetic.td; sourceTree = "<group>"; };
+		1F8DB2FC1A75F5C8007C68AC /* X86InstrAVX512.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrAVX512.td; sourceTree = "<group>"; };
+		1F8DB2FD1A75F5C8007C68AC /* X86InstrBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86InstrBuilder.h; sourceTree = "<group>"; };
+		1F8DB2FE1A75F5C8007C68AC /* X86InstrCMovSetCC.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrCMovSetCC.td; sourceTree = "<group>"; };
+		1F8DB2FF1A75F5C8007C68AC /* X86InstrCompiler.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrCompiler.td; sourceTree = "<group>"; };
+		1F8DB3001A75F5C8007C68AC /* X86InstrControl.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrControl.td; sourceTree = "<group>"; };
+		1F8DB3011A75F5C8007C68AC /* X86InstrExtension.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrExtension.td; sourceTree = "<group>"; };
+		1F8DB3021A75F5C8007C68AC /* X86InstrFMA.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrFMA.td; sourceTree = "<group>"; };
+		1F8DB3031A75F5C8007C68AC /* X86InstrFormats.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrFormats.td; sourceTree = "<group>"; };
+		1F8DB3041A75F5C8007C68AC /* X86InstrFPStack.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrFPStack.td; sourceTree = "<group>"; };
+		1F8DB3051A75F5C8007C68AC /* X86InstrFragmentsSIMD.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrFragmentsSIMD.td; sourceTree = "<group>"; };
+		1F8DB3061A75F5C8007C68AC /* X86InstrInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86InstrInfo.cpp; sourceTree = "<group>"; };
+		1F8DB3071A75F5C8007C68AC /* X86InstrInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86InstrInfo.h; sourceTree = "<group>"; };
+		1F8DB3081A75F5C8007C68AC /* X86InstrInfo.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrInfo.td; sourceTree = "<group>"; };
+		1F8DB3091A75F5C8007C68AC /* X86InstrMMX.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrMMX.td; sourceTree = "<group>"; };
+		1F8DB30A1A75F5C8007C68AC /* X86InstrShiftRotate.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrShiftRotate.td; sourceTree = "<group>"; };
+		1F8DB30B1A75F5C8007C68AC /* X86InstrSSE.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrSSE.td; sourceTree = "<group>"; };
+		1F8DB30C1A75F5C8007C68AC /* X86InstrSVM.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrSVM.td; sourceTree = "<group>"; };
+		1F8DB30D1A75F5C8007C68AC /* X86InstrSystem.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrSystem.td; sourceTree = "<group>"; };
+		1F8DB30E1A75F5C8007C68AC /* X86InstrTSX.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrTSX.td; sourceTree = "<group>"; };
+		1F8DB30F1A75F5C8007C68AC /* X86InstrVMX.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrVMX.td; sourceTree = "<group>"; };
+		1F8DB3101A75F5C8007C68AC /* X86InstrXOP.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86InstrXOP.td; sourceTree = "<group>"; };
+		1F8DB3111A75F5C8007C68AC /* X86ISelDAGToDAG.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86ISelDAGToDAG.cpp; sourceTree = "<group>"; };
+		1F8DB3121A75F5C8007C68AC /* X86ISelLowering.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86ISelLowering.cpp; sourceTree = "<group>"; };
+		1F8DB3131A75F5C8007C68AC /* X86ISelLowering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86ISelLowering.h; sourceTree = "<group>"; };
+		1F8DB3141A75F5C8007C68AC /* X86JITInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86JITInfo.cpp; sourceTree = "<group>"; };
+		1F8DB3151A75F5C8007C68AC /* X86JITInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86JITInfo.h; sourceTree = "<group>"; };
+		1F8DB3161A75F5C8007C68AC /* X86MachineFunctionInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86MachineFunctionInfo.cpp; sourceTree = "<group>"; };
+		1F8DB3171A75F5C8007C68AC /* X86MachineFunctionInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86MachineFunctionInfo.h; sourceTree = "<group>"; };
+		1F8DB3181A75F5C8007C68AC /* X86MCInstLower.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86MCInstLower.cpp; sourceTree = "<group>"; };
+		1F8DB3191A75F5C8007C68AC /* X86PadShortFunction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86PadShortFunction.cpp; sourceTree = "<group>"; };
+		1F8DB31A1A75F5C8007C68AC /* X86RegisterInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86RegisterInfo.cpp; sourceTree = "<group>"; };
+		1F8DB31B1A75F5C8007C68AC /* X86RegisterInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86RegisterInfo.h; sourceTree = "<group>"; };
+		1F8DB31C1A75F5C8007C68AC /* X86RegisterInfo.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86RegisterInfo.td; sourceTree = "<group>"; };
+		1F8DB31D1A75F5C8007C68AC /* X86Relocations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86Relocations.h; sourceTree = "<group>"; };
+		1F8DB31E1A75F5C8007C68AC /* X86SchedHaswell.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86SchedHaswell.td; sourceTree = "<group>"; };
+		1F8DB31F1A75F5C8007C68AC /* X86SchedSandyBridge.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86SchedSandyBridge.td; sourceTree = "<group>"; };
+		1F8DB3201A75F5C8007C68AC /* X86Schedule.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86Schedule.td; sourceTree = "<group>"; };
+		1F8DB3211A75F5C8007C68AC /* X86ScheduleAtom.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86ScheduleAtom.td; sourceTree = "<group>"; };
+		1F8DB3221A75F5C8007C68AC /* X86ScheduleSLM.td */ = {isa = PBXFileReference; lastKnownFileType = text; path = X86ScheduleSLM.td; sourceTree = "<group>"; };
+		1F8DB3231A75F5C8007C68AC /* X86SelectionDAGInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86SelectionDAGInfo.cpp; sourceTree = "<group>"; };
+		1F8DB3241A75F5C8007C68AC /* X86SelectionDAGInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86SelectionDAGInfo.h; sourceTree = "<group>"; };
+		1F8DB3251A75F5C8007C68AC /* X86Subtarget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86Subtarget.cpp; sourceTree = "<group>"; };
+		1F8DB3261A75F5C8007C68AC /* X86Subtarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86Subtarget.h; sourceTree = "<group>"; };
+		1F8DB3271A75F5C8007C68AC /* X86TargetMachine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86TargetMachine.cpp; sourceTree = "<group>"; };
+		1F8DB3281A75F5C8007C68AC /* X86TargetMachine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86TargetMachine.h; sourceTree = "<group>"; };
+		1F8DB3291A75F5C8007C68AC /* X86TargetObjectFile.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86TargetObjectFile.cpp; sourceTree = "<group>"; };
+		1F8DB32A1A75F5C8007C68AC /* X86TargetObjectFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = X86TargetObjectFile.h; sourceTree = "<group>"; };
+		1F8DB32B1A75F5C8007C68AC /* X86TargetTransformInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86TargetTransformInfo.cpp; sourceTree = "<group>"; };
+		1F8DB32C1A75F5C8007C68AC /* X86VZeroUpper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = X86VZeroUpper.cpp; sourceTree = "<group>"; };
+		1F8DB3331A75F60B007C68AC /* libLLVMX86CodeGen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMX86CodeGen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F8DB3301A75F60B007C68AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1F8DB2701A75F342007C68AC = {
 			isa = PBXGroup;
 			children = (
+				1F8DB2CA1A75F5A1007C68AC /* lib */,
 				1F8DB2C81A75F398007C68AC /* Build Scripts */,
 				1F8DB2771A75F374007C68AC /* References */,
+				1F8DB3341A75F60B007C68AC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,7 +395,210 @@
 			name = "Build Scripts";
 			sourceTree = "<group>";
 		};
+		1F8DB2CA1A75F5A1007C68AC /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB32E1A75F5ED007C68AC /* TableGen Data */,
+				1F8DB32D1A75F5E0007C68AC /* CodeGen */,
+				1F8DB2CB1A75F5C8007C68AC /* AsmParser */,
+				1F8DB2CD1A75F5C8007C68AC /* Disassembler */,
+				1F8DB2D31A75F5C8007C68AC /* InstPrinter */,
+				1F8DB2DA1A75F5C8007C68AC /* MCTargetDesc */,
+				1F8DB2E81A75F5C8007C68AC /* TargetInfo */,
+				1F8DB2EA1A75F5C8007C68AC /* Utils */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		1F8DB2CB1A75F5C8007C68AC /* AsmParser */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB2CC1A75F5C8007C68AC /* X86AsmParser.cpp */,
+			);
+			path = AsmParser;
+			sourceTree = "<group>";
+		};
+		1F8DB2CD1A75F5C8007C68AC /* Disassembler */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB2CE1A75F5C8007C68AC /* X86Disassembler.cpp */,
+				1F8DB2CF1A75F5C8007C68AC /* X86Disassembler.h */,
+				1F8DB2D01A75F5C8007C68AC /* X86DisassemblerDecoder.c */,
+				1F8DB2D11A75F5C8007C68AC /* X86DisassemblerDecoder.h */,
+				1F8DB2D21A75F5C8007C68AC /* X86DisassemblerDecoderCommon.h */,
+			);
+			path = Disassembler;
+			sourceTree = "<group>";
+		};
+		1F8DB2D31A75F5C8007C68AC /* InstPrinter */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB2D41A75F5C8007C68AC /* X86ATTInstPrinter.cpp */,
+				1F8DB2D51A75F5C8007C68AC /* X86ATTInstPrinter.h */,
+				1F8DB2D61A75F5C8007C68AC /* X86InstComments.cpp */,
+				1F8DB2D71A75F5C8007C68AC /* X86InstComments.h */,
+				1F8DB2D81A75F5C8007C68AC /* X86IntelInstPrinter.cpp */,
+				1F8DB2D91A75F5C8007C68AC /* X86IntelInstPrinter.h */,
+			);
+			path = InstPrinter;
+			sourceTree = "<group>";
+		};
+		1F8DB2DA1A75F5C8007C68AC /* MCTargetDesc */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB2DB1A75F5C8007C68AC /* X86AsmBackend.cpp */,
+				1F8DB2DC1A75F5C8007C68AC /* X86BaseInfo.h */,
+				1F8DB2DD1A75F5C8007C68AC /* X86ELFObjectWriter.cpp */,
+				1F8DB2DE1A75F5C8007C68AC /* X86ELFRelocationInfo.cpp */,
+				1F8DB2DF1A75F5C8007C68AC /* X86FixupKinds.h */,
+				1F8DB2E01A75F5C8007C68AC /* X86MachObjectWriter.cpp */,
+				1F8DB2E11A75F5C8007C68AC /* X86MachORelocationInfo.cpp */,
+				1F8DB2E21A75F5C8007C68AC /* X86MCAsmInfo.cpp */,
+				1F8DB2E31A75F5C8007C68AC /* X86MCAsmInfo.h */,
+				1F8DB2E41A75F5C8007C68AC /* X86MCCodeEmitter.cpp */,
+				1F8DB2E51A75F5C8007C68AC /* X86MCTargetDesc.cpp */,
+				1F8DB2E61A75F5C8007C68AC /* X86MCTargetDesc.h */,
+				1F8DB2E71A75F5C8007C68AC /* X86WinCOFFObjectWriter.cpp */,
+			);
+			path = MCTargetDesc;
+			sourceTree = "<group>";
+		};
+		1F8DB2E81A75F5C8007C68AC /* TargetInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB2E91A75F5C8007C68AC /* X86TargetInfo.cpp */,
+			);
+			path = TargetInfo;
+			sourceTree = "<group>";
+		};
+		1F8DB2EA1A75F5C8007C68AC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB2EB1A75F5C8007C68AC /* X86ShuffleDecode.cpp */,
+				1F8DB2EC1A75F5C8007C68AC /* X86ShuffleDecode.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1F8DB32D1A75F5E0007C68AC /* CodeGen */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB2ED1A75F5C8007C68AC /* X86.h */,
+				1F8DB2EF1A75F5C8007C68AC /* X86AsmPrinter.cpp */,
+				1F8DB2F01A75F5C8007C68AC /* X86AsmPrinter.h */,
+				1F8DB2F21A75F5C8007C68AC /* X86CodeEmitter.cpp */,
+				1F8DB2F31A75F5C8007C68AC /* X86COFFMachineModuleInfo.cpp */,
+				1F8DB2F41A75F5C8007C68AC /* X86COFFMachineModuleInfo.h */,
+				1F8DB2F51A75F5C8007C68AC /* X86FastISel.cpp */,
+				1F8DB2F61A75F5C8007C68AC /* X86FixupLEAs.cpp */,
+				1F8DB2F71A75F5C8007C68AC /* X86FloatingPoint.cpp */,
+				1F8DB2F81A75F5C8007C68AC /* X86FrameLowering.cpp */,
+				1F8DB2F91A75F5C8007C68AC /* X86FrameLowering.h */,
+				1F8DB2FD1A75F5C8007C68AC /* X86InstrBuilder.h */,
+				1F8DB3061A75F5C8007C68AC /* X86InstrInfo.cpp */,
+				1F8DB3071A75F5C8007C68AC /* X86InstrInfo.h */,
+				1F8DB3111A75F5C8007C68AC /* X86ISelDAGToDAG.cpp */,
+				1F8DB3121A75F5C8007C68AC /* X86ISelLowering.cpp */,
+				1F8DB3131A75F5C8007C68AC /* X86ISelLowering.h */,
+				1F8DB3141A75F5C8007C68AC /* X86JITInfo.cpp */,
+				1F8DB3151A75F5C8007C68AC /* X86JITInfo.h */,
+				1F8DB3161A75F5C8007C68AC /* X86MachineFunctionInfo.cpp */,
+				1F8DB3171A75F5C8007C68AC /* X86MachineFunctionInfo.h */,
+				1F8DB3181A75F5C8007C68AC /* X86MCInstLower.cpp */,
+				1F8DB3191A75F5C8007C68AC /* X86PadShortFunction.cpp */,
+				1F8DB31A1A75F5C8007C68AC /* X86RegisterInfo.cpp */,
+				1F8DB31B1A75F5C8007C68AC /* X86RegisterInfo.h */,
+				1F8DB31D1A75F5C8007C68AC /* X86Relocations.h */,
+				1F8DB3231A75F5C8007C68AC /* X86SelectionDAGInfo.cpp */,
+				1F8DB3241A75F5C8007C68AC /* X86SelectionDAGInfo.h */,
+				1F8DB3251A75F5C8007C68AC /* X86Subtarget.cpp */,
+				1F8DB3261A75F5C8007C68AC /* X86Subtarget.h */,
+				1F8DB3271A75F5C8007C68AC /* X86TargetMachine.cpp */,
+				1F8DB3281A75F5C8007C68AC /* X86TargetMachine.h */,
+				1F8DB3291A75F5C8007C68AC /* X86TargetObjectFile.cpp */,
+				1F8DB32A1A75F5C8007C68AC /* X86TargetObjectFile.h */,
+				1F8DB32B1A75F5C8007C68AC /* X86TargetTransformInfo.cpp */,
+				1F8DB32C1A75F5C8007C68AC /* X86VZeroUpper.cpp */,
+			);
+			name = CodeGen;
+			sourceTree = "<group>";
+		};
+		1F8DB32E1A75F5ED007C68AC /* TableGen Data */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB2EE1A75F5C8007C68AC /* X86.td */,
+				1F8DB2F11A75F5C8007C68AC /* X86CallingConv.td */,
+				1F8DB2FA1A75F5C8007C68AC /* X86Instr3DNow.td */,
+				1F8DB2FB1A75F5C8007C68AC /* X86InstrArithmetic.td */,
+				1F8DB2FC1A75F5C8007C68AC /* X86InstrAVX512.td */,
+				1F8DB2FE1A75F5C8007C68AC /* X86InstrCMovSetCC.td */,
+				1F8DB2FF1A75F5C8007C68AC /* X86InstrCompiler.td */,
+				1F8DB3001A75F5C8007C68AC /* X86InstrControl.td */,
+				1F8DB3011A75F5C8007C68AC /* X86InstrExtension.td */,
+				1F8DB3021A75F5C8007C68AC /* X86InstrFMA.td */,
+				1F8DB3031A75F5C8007C68AC /* X86InstrFormats.td */,
+				1F8DB3041A75F5C8007C68AC /* X86InstrFPStack.td */,
+				1F8DB3051A75F5C8007C68AC /* X86InstrFragmentsSIMD.td */,
+				1F8DB3081A75F5C8007C68AC /* X86InstrInfo.td */,
+				1F8DB3091A75F5C8007C68AC /* X86InstrMMX.td */,
+				1F8DB30A1A75F5C8007C68AC /* X86InstrShiftRotate.td */,
+				1F8DB30B1A75F5C8007C68AC /* X86InstrSSE.td */,
+				1F8DB30C1A75F5C8007C68AC /* X86InstrSVM.td */,
+				1F8DB30D1A75F5C8007C68AC /* X86InstrSystem.td */,
+				1F8DB30E1A75F5C8007C68AC /* X86InstrTSX.td */,
+				1F8DB30F1A75F5C8007C68AC /* X86InstrVMX.td */,
+				1F8DB3101A75F5C8007C68AC /* X86InstrXOP.td */,
+				1F8DB31C1A75F5C8007C68AC /* X86RegisterInfo.td */,
+				1F8DB31E1A75F5C8007C68AC /* X86SchedHaswell.td */,
+				1F8DB31F1A75F5C8007C68AC /* X86SchedSandyBridge.td */,
+				1F8DB3201A75F5C8007C68AC /* X86Schedule.td */,
+				1F8DB3211A75F5C8007C68AC /* X86ScheduleAtom.td */,
+				1F8DB3221A75F5C8007C68AC /* X86ScheduleSLM.td */,
+			);
+			name = "TableGen Data";
+			sourceTree = "<group>";
+		};
+		1F8DB3341A75F60B007C68AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DB3331A75F60B007C68AC /* libLLVMX86CodeGen.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F8DB3311A75F60B007C68AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F8DB3321A75F60B007C68AC /* LLVMX86CodeGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8DB3351A75F60B007C68AC /* Build configuration list for PBXNativeTarget "LLVMX86CodeGen" */;
+			buildPhases = (
+				1F8DB32F1A75F60B007C68AC /* Sources */,
+				1F8DB3301A75F60B007C68AC /* Frameworks */,
+				1F8DB3311A75F60B007C68AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F8DB3391A75F613007C68AC /* PBXTargetDependency */,
+				1F8DB33B1A75F613007C68AC /* PBXTargetDependency */,
+			);
+			name = LLVMX86CodeGen;
+			productName = LLVMX86CodeGen;
+			productReference = 1F8DB3331A75F60B007C68AC /* libLLVMX86CodeGen.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1F8DB2711A75F342007C68AC /* Project object */ = {
@@ -261,6 +607,9 @@
 				LastUpgradeCheck = 0620;
 				TargetAttributes = {
 					1F8DB2C11A75F385007C68AC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					1F8DB3321A75F60B007C68AC = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
@@ -273,6 +622,7 @@
 				en,
 			);
 			mainGroup = 1F8DB2701A75F342007C68AC;
+			productRefGroup = 1F8DB3341A75F60B007C68AC /* Products */;
 			projectDirPath = "";
 			projectReferences = (
 				{
@@ -283,6 +633,7 @@
 			projectRoot = "";
 			targets = (
 				1F8DB2C11A75F385007C68AC /* X86CommonTableGen */,
+				1F8DB3321A75F60B007C68AC /* LLVMX86CodeGen */,
 			);
 		};
 /* End PBXProject section */
@@ -468,11 +819,52 @@
 		};
 /* End PBXShellScriptBuildPhase section */
 
+/* Begin PBXSourcesBuildPhase section */
+		1F8DB32F1A75F60B007C68AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8DB33C1A75F621007C68AC /* X86AsmPrinter.cpp in Sources */,
+				1F8DB33E1A75F621007C68AC /* X86CodeEmitter.cpp in Sources */,
+				1F8DB33F1A75F621007C68AC /* X86COFFMachineModuleInfo.cpp in Sources */,
+				1F8DB3411A75F621007C68AC /* X86FastISel.cpp in Sources */,
+				1F8DB3421A75F621007C68AC /* X86FixupLEAs.cpp in Sources */,
+				1F8DB3431A75F621007C68AC /* X86FloatingPoint.cpp in Sources */,
+				1F8DB3441A75F621007C68AC /* X86FrameLowering.cpp in Sources */,
+				1F8DB3471A75F621007C68AC /* X86InstrInfo.cpp in Sources */,
+				1F8DB3491A75F621007C68AC /* X86ISelDAGToDAG.cpp in Sources */,
+				1F8DB34A1A75F621007C68AC /* X86ISelLowering.cpp in Sources */,
+				1F8DB34C1A75F621007C68AC /* X86JITInfo.cpp in Sources */,
+				1F8DB34E1A75F621007C68AC /* X86MachineFunctionInfo.cpp in Sources */,
+				1F8DB3501A75F621007C68AC /* X86MCInstLower.cpp in Sources */,
+				1F8DB3511A75F621007C68AC /* X86PadShortFunction.cpp in Sources */,
+				1F8DB3521A75F621007C68AC /* X86RegisterInfo.cpp in Sources */,
+				1F8DB3551A75F621007C68AC /* X86SelectionDAGInfo.cpp in Sources */,
+				1F8DB3571A75F621007C68AC /* X86Subtarget.cpp in Sources */,
+				1F8DB3591A75F621007C68AC /* X86TargetMachine.cpp in Sources */,
+				1F8DB35B1A75F621007C68AC /* X86TargetObjectFile.cpp in Sources */,
+				1F8DB35D1A75F621007C68AC /* X86TargetTransformInfo.cpp in Sources */,
+				1F8DB35E1A75F621007C68AC /* X86VZeroUpper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
 /* Begin PBXTargetDependency section */
 		1F8DB2C61A75F38F007C68AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "llvm-tblgen";
 			targetProxy = 1F8DB2C51A75F38F007C68AC /* PBXContainerItemProxy */;
+		};
+		1F8DB3391A75F613007C68AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F8DB2C11A75F385007C68AC /* X86CommonTableGen */;
+			targetProxy = 1F8DB3381A75F613007C68AC /* PBXContainerItemProxy */;
+		};
+		1F8DB33B1A75F613007C68AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Intrinsics.gen;
+			targetProxy = 1F8DB33A1A75F613007C68AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -480,6 +872,14 @@
 		1F8DB2751A75F342007C68AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__STDC_CONSTANT_MACROS,
+					__STDC_LIMIT_MACROS,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(LLVM_PROJECT_ROOT)/include",
+					"$(PROJECT_TEMP_ROOT)/llvm_generated",
+				);
 				LLVM_PROJECT_ROOT = "$(SRCROOT)/../../..";
 			};
 			name = Debug;
@@ -487,6 +887,14 @@
 		1F8DB2761A75F342007C68AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					__STDC_CONSTANT_MACROS,
+					__STDC_LIMIT_MACROS,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(LLVM_PROJECT_ROOT)/include",
+					"$(PROJECT_TEMP_ROOT)/llvm_generated",
+				);
 				LLVM_PROJECT_ROOT = "$(SRCROOT)/../../..";
 			};
 			name = Release;
@@ -502,6 +910,80 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F8DB3361A75F60B007C68AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F8DB3371A75F60B007C68AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -522,6 +1004,14 @@
 			buildConfigurations = (
 				1F8DB2C31A75F385007C68AC /* Debug */,
 				1F8DB2C41A75F385007C68AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F8DB3351A75F60B007C68AC /* Build configuration list for PBXNativeTarget "LLVMX86CodeGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8DB3361A75F60B007C68AC /* Debug */,
+				1F8DB3371A75F60B007C68AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
