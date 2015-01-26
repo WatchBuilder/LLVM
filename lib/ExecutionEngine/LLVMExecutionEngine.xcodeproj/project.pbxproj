@@ -19,6 +19,10 @@
 		1F8DB2481A75F1F2007C68AC /* JITMemoryManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB2121A75F0FB007C68AC /* JITMemoryManager.cpp */; };
 		1F8DB2511A75F21F007C68AC /* MCJIT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB2141A75F0FB007C68AC /* MCJIT.cpp */; };
 		1F8DB2521A75F21F007C68AC /* SectionMemoryManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB2161A75F0FB007C68AC /* SectionMemoryManager.cpp */; };
+		1F8DB25B1A75F24C007C68AC /* GDBRegistrar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB2191A75F0FB007C68AC /* GDBRegistrar.cpp */; };
+		1F8DB25C1A75F24C007C68AC /* RuntimeDyld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB21C1A75F0FB007C68AC /* RuntimeDyld.cpp */; };
+		1F8DB25D1A75F24C007C68AC /* RuntimeDyldELF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB21D1A75F0FB007C68AC /* RuntimeDyldELF.cpp */; };
+		1F8DB25E1A75F24C007C68AC /* RuntimeDyldMachO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB2201A75F0FB007C68AC /* RuntimeDyldMachO.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -209,6 +213,7 @@
 		1F8DB2371A75F191007C68AC /* libLLVMInterpreter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMInterpreter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DB2421A75F1DA007C68AC /* libLLVMJIT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMJIT.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DB24D1A75F208007C68AC /* libLLVMMCJIT.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMMCJIT.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8DB2571A75F235007C68AC /* libLLVMRuntimeDyld.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMRuntimeDyld.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +245,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F8DB2541A75F235007C68AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -259,6 +271,7 @@
 				1F8DB2371A75F191007C68AC /* libLLVMInterpreter.a */,
 				1F8DB2421A75F1DA007C68AC /* libLLVMJIT.a */,
 				1F8DB24D1A75F208007C68AC /* libLLVMMCJIT.a */,
+				1F8DB2571A75F235007C68AC /* libLLVMRuntimeDyld.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -403,6 +416,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F8DB2551A75F235007C68AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -474,6 +494,23 @@
 			productReference = 1F8DB24D1A75F208007C68AC /* libLLVMMCJIT.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F8DB2561A75F235007C68AC /* LLVMRuntimeDyld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8DB2581A75F235007C68AC /* Build configuration list for PBXNativeTarget "LLVMRuntimeDyld" */;
+			buildPhases = (
+				1F8DB2531A75F235007C68AC /* Sources */,
+				1F8DB2541A75F235007C68AC /* Frameworks */,
+				1F8DB2551A75F235007C68AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLVMRuntimeDyld;
+			productName = LLVMRuntimeDyld;
+			productReference = 1F8DB2571A75F235007C68AC /* libLLVMRuntimeDyld.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -492,6 +529,9 @@
 						CreatedOnToolsVersion = 6.2;
 					};
 					1F8DB24C1A75F208007C68AC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					1F8DB2561A75F235007C68AC = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
@@ -518,6 +558,7 @@
 				1F8DB2361A75F191007C68AC /* LLVMInterpreter */,
 				1F8DB2411A75F1DA007C68AC /* LLVMJIT */,
 				1F8DB24C1A75F208007C68AC /* LLVMMCJIT */,
+				1F8DB2561A75F235007C68AC /* LLVMRuntimeDyld */,
 			);
 		};
 /* End PBXProject section */
@@ -717,6 +758,17 @@
 			files = (
 				1F8DB2511A75F21F007C68AC /* MCJIT.cpp in Sources */,
 				1F8DB2521A75F21F007C68AC /* SectionMemoryManager.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8DB2531A75F235007C68AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8DB25B1A75F24C007C68AC /* GDBRegistrar.cpp in Sources */,
+				1F8DB25C1A75F24C007C68AC /* RuntimeDyld.cpp in Sources */,
+				1F8DB25D1A75F24C007C68AC /* RuntimeDyldELF.cpp in Sources */,
+				1F8DB25E1A75F24C007C68AC /* RuntimeDyldMachO.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1057,6 +1109,82 @@
 			};
 			name = Release;
 		};
+		1F8DB2591A75F235007C68AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F8DB25A1A75F235007C68AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1098,6 +1226,14 @@
 			buildConfigurations = (
 				1F8DB24F1A75F208007C68AC /* Debug */,
 				1F8DB2501A75F208007C68AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F8DB2581A75F235007C68AC /* Build configuration list for PBXNativeTarget "LLVMRuntimeDyld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8DB2591A75F235007C68AC /* Debug */,
+				1F8DB25A1A75F235007C68AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
