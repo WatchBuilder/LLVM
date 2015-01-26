@@ -193,6 +193,7 @@
 		1F68177E1A75B0BE00570C60 /* Verifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2926B81A759ABE00010E0D /* Verifier.cpp */; };
 		1F6817871A75B16000570C60 /* IRReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2926BA1A759ABE00010E0D /* IRReader.cpp */; };
 		1F8DAE0C1A75DA8A007C68AC /* SandboxExec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAE0B1A75DA8A007C68AC /* SandboxExec.cpp */; };
+		1F8DAE0D1A75DF13007C68AC /* libLLVMSandboxSupport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA6AD641A75D5F800997E31 /* libLLVMSandboxSupport.a */; };
 		1FA6AD6C1A75D67500997E31 /* SandboxExec.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA6AD6A1A75D67500997E31 /* SandboxExec.h */; };
 		1FA6AD6D1A75D67500997E31 /* SandboxIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA6AD6B1A75D67500997E31 /* SandboxIO.h */; };
 		1FA6AD701A75D69A00997E31 /* SandboxIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA6AD6F1A75D69A00997E31 /* SandboxIO.cpp */; };
@@ -226,6 +227,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1F68173E1A75AFA500570C60;
 			remoteInfo = Intrinsics.gen;
+		};
+		1F8DAE0E1A75DF4B007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F29253D1A759A7E00010E0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FA6AD631A75D5F800997E31;
+			remoteInfo = LLVMSandboxSupport;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -2441,6 +2449,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8DAE0D1A75DF13007C68AC /* libLLVMSandboxSupport.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5906,6 +5915,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1F8DAE0F1A75DF4B007C68AC /* PBXTargetDependency */,
 			);
 			name = LLVMSupport;
 			productName = LLVMSupport;
@@ -6306,6 +6316,11 @@
 			isa = PBXTargetDependency;
 			target = 1F68173E1A75AFA500570C60 /* Intrinsics.gen */;
 			targetProxy = 1F68174E1A75B0B300570C60 /* PBXContainerItemProxy */;
+		};
+		1F8DAE0F1A75DF4B007C68AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FA6AD631A75D5F800997E31 /* LLVMSandboxSupport */;
+			targetProxy = 1F8DAE0E1A75DF4B007C68AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

@@ -50,6 +50,8 @@
 #include <mach-o/dyld.h>
 #endif
 
+#include <llvm-sb/SandboxIO.h>
+
 // Both stdio.h and cstdio are included via different pathes and
 // stdcxx's cstdio doesn't include stdio.h, so it doesn't #undef the macros
 // either.
@@ -141,7 +143,7 @@ retry_random_path:
   // Try to open + create the file.
   switch (Type) {
   case FS_File: {
-    int RandomFD = ::open(ResultPath.begin(), O_RDWR | O_CREAT | O_EXCL, Mode);
+    int RandomFD = open(ResultPath.begin(), O_RDWR | O_CREAT | O_EXCL, Mode);
     if (RandomFD == -1) {
       int SavedErrno = errno;
       // If the file existed, try again, otherwise, error.
@@ -192,7 +194,7 @@ test_dir(char buf[PATH_MAX], char ret[PATH_MAX],
   snprintf(buf, PATH_MAX, "%s/%s", dir, bin);
   if (realpath(buf, ret) == NULL)
     return (1);
-  if (stat(buf, &sb) != 0)
+  if (llvm_sb::stat(buf, &sb) != 0)
     return (1);
 
   return (0);
@@ -337,7 +339,7 @@ error_code create_directory(const Twine &path, bool &existed) {
   SmallString<128> path_storage;
   StringRef p = path.toNullTerminatedStringRef(path_storage);
 
-  if (::mkdir(p.begin(), S_IRWXU | S_IRWXG) == -1) {
+  if (llvm_sb::mkdir(p.begin(), S_IRWXU | S_IRWXG) == -1) {
     if (errno != errc::file_exists)
       return error_code(errno, system_category());
     existed = true;
@@ -354,7 +356,7 @@ error_code create_hard_link(const Twine &to, const Twine &from) {
   StringRef f = from.toNullTerminatedStringRef(from_storage);
   StringRef t = to.toNullTerminatedStringRef(to_storage);
 
-  if (::link(t.begin(), f.begin()) == -1)
+  if (llvm_sb::link(t.begin(), f.begin()) == -1)
     return error_code(errno, system_category());
 
   return error_code::success();
@@ -367,7 +369,7 @@ error_code create_symlink(const Twine &to, const Twine &from) {
   StringRef f = from.toNullTerminatedStringRef(from_storage);
   StringRef t = to.toNullTerminatedStringRef(to_storage);
 
-  if (::symlink(t.begin(), f.begin()) == -1)
+  if (llvm_sb::symlink(t.begin(), f.begin()) == -1)
     return error_code(errno, system_category());
 
   return error_code::success();
@@ -378,7 +380,7 @@ error_code remove(const Twine &path, bool &existed) {
   StringRef p = path.toNullTerminatedStringRef(path_storage);
 
   struct stat buf;
-  if (stat(p.begin(), &buf) != 0) {
+  if (llvm_sb::stat(p.begin(), &buf) != 0) {
     if (errno != errc::no_such_file_or_directory)
       return error_code(errno, system_category());
     existed = false;
@@ -393,7 +395,7 @@ error_code remove(const Twine &path, bool &existed) {
   if (!S_ISREG(buf.st_mode) && !S_ISDIR(buf.st_mode))
     return make_error_code(errc::operation_not_permitted);
 
-  if (::remove(p.begin()) == -1) {
+  if (llvm_sb::remove(p.begin()) == -1) {
     if (errno != errc::no_such_file_or_directory)
       return error_code(errno, system_category());
     existed = false;
@@ -410,7 +412,7 @@ error_code rename(const Twine &from, const Twine &to) {
   StringRef f = from.toNullTerminatedStringRef(from_storage);
   StringRef t = to.toNullTerminatedStringRef(to_storage);
 
-  if (::rename(f.begin(), t.begin()) == -1)
+  if (llvm_sb::rename(f.begin(), t.begin()) == -1)
     return error_code(errno, system_category());
 
   return error_code::success();
@@ -420,7 +422,7 @@ error_code resize_file(const Twine &path, uint64_t size) {
   SmallString<128> path_storage;
   StringRef p = path.toNullTerminatedStringRef(path_storage);
 
-  if (::truncate(p.begin(), size) == -1)
+  if (llvm_sb::truncate(p.begin(), size) == -1)
     return error_code(errno, system_category());
 
   return error_code::success();
@@ -430,7 +432,7 @@ error_code exists(const Twine &path, bool &result) {
   SmallString<128> path_storage;
   StringRef p = path.toNullTerminatedStringRef(path_storage);
 
-  if (::access(p.begin(), F_OK) == -1) {
+  if (llvm_sb::access(p.begin(), F_OK) == -1) {
     if (errno != errc::no_such_file_or_directory)
       return error_code(errno, system_category());
     result = false;
@@ -443,17 +445,17 @@ error_code exists(const Twine &path, bool &result) {
 bool can_write(const Twine &Path) {
   SmallString<128> PathStorage;
   StringRef P = Path.toNullTerminatedStringRef(PathStorage);
-  return 0 == access(P.begin(), W_OK);
+  return 0 == llvm_sb::access(P.begin(), W_OK);
 }
 
 bool can_execute(const Twine &Path) {
   SmallString<128> PathStorage;
   StringRef P = Path.toNullTerminatedStringRef(PathStorage);
 
-  if (0 != access(P.begin(), R_OK | X_OK))
+  if (0 != llvm_sb::access(P.begin(), R_OK | X_OK))
     return false;
   struct stat buf;
-  if (0 != stat(P.begin(), &buf))
+  if (0 != llvm_sb::stat(P.begin(), &buf))
     return false;
   if (!S_ISREG(buf.st_mode))
     return false;
@@ -513,7 +515,7 @@ error_code status(const Twine &Path, file_status &Result) {
   StringRef P = Path.toNullTerminatedStringRef(PathStorage);
 
   struct stat Status;
-  int StatRet = ::stat(P.begin(), &Status);
+  int StatRet = llvm_sb::stat(P.begin(), &Status);
   return fillStatus(StatRet, Status, Result);
 }
 
@@ -590,7 +592,7 @@ mapped_file_region::mapped_file_region(const Twine &path,
   SmallString<128> path_storage;
   StringRef name = path.toNullTerminatedStringRef(path_storage);
   int oflags = (mode == readonly) ? O_RDONLY : O_RDWR;
-  int ofd = ::open(name.begin(), oflags);
+  int ofd = open(name.begin(), oflags);
   if (ofd == -1) {
     ec = error_code(errno, system_category());
     return;
@@ -661,7 +663,7 @@ int mapped_file_region::alignment() {
 error_code detail::directory_iterator_construct(detail::DirIterState &it,
                                                 StringRef path){
   SmallString<128> path_null(path);
-  DIR *directory = ::opendir(path_null.c_str());
+  DIR *directory = opendir(path_null.c_str());
   if (directory == 0)
     return error_code(errno, system_category());
 
@@ -733,7 +735,7 @@ error_code map_file_pages(const Twine &path, off_t file_offset, size_t size,
   SmallString<128> path_storage;
   StringRef name = path.toNullTerminatedStringRef(path_storage);
   int oflags = map_writable ? O_RDWR : O_RDONLY;
-  int ofd = ::open(name.begin(), oflags);
+  int ofd = open(name.begin(), oflags);
   if ( ofd == -1 )
     return error_code(errno, system_category());
   AutoFD fd(ofd);
