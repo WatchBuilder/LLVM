@@ -450,6 +450,7 @@
 			isa = PBXGroup;
 			children = (
 				1F8DB2CA1A75F5A1007C68AC /* lib */,
+				1F8DB32E1A75F5ED007C68AC /* TableGen Data */,
 				1F8DB2C81A75F398007C68AC /* Build Scripts */,
 				1F8DB2771A75F374007C68AC /* References */,
 				1F8DB3341A75F60B007C68AC /* Products */,
@@ -505,7 +506,6 @@
 		1F8DB2CA1A75F5A1007C68AC /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				1F8DB32E1A75F5ED007C68AC /* TableGen Data */,
 				1F8DB32D1A75F5E0007C68AC /* CodeGen */,
 				1F8DB2CB1A75F5C8007C68AC /* AsmParser */,
 				1F8DB2CD1A75F5C8007C68AC /* Disassembler */,
