@@ -50,6 +50,19 @@
 		1F8DB02B1A75E9C1007C68AC /* Instrumentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF851A75E8DC007C68AC /* Instrumentation.cpp */; };
 		1F8DB02C1A75E9C1007C68AC /* MemorySanitizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF871A75E8DC007C68AC /* MemorySanitizer.cpp */; };
 		1F8DB02D1A75E9C1007C68AC /* ThreadSanitizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF881A75E8DC007C68AC /* ThreadSanitizer.cpp */; };
+		1F8DB0381A75EA11007C68AC /* InstCombineAddSub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF701A75E8DC007C68AC /* InstCombineAddSub.cpp */; };
+		1F8DB0391A75EA11007C68AC /* InstCombineAndOrXor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF711A75E8DC007C68AC /* InstCombineAndOrXor.cpp */; };
+		1F8DB03A1A75EA11007C68AC /* InstCombineCalls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF721A75E8DC007C68AC /* InstCombineCalls.cpp */; };
+		1F8DB03B1A75EA11007C68AC /* InstCombineCasts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF731A75E8DC007C68AC /* InstCombineCasts.cpp */; };
+		1F8DB03C1A75EA11007C68AC /* InstCombineCompares.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF741A75E8DC007C68AC /* InstCombineCompares.cpp */; };
+		1F8DB03D1A75EA11007C68AC /* InstCombineLoadStoreAlloca.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF751A75E8DC007C68AC /* InstCombineLoadStoreAlloca.cpp */; };
+		1F8DB03E1A75EA11007C68AC /* InstCombineMulDivRem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF761A75E8DC007C68AC /* InstCombineMulDivRem.cpp */; };
+		1F8DB03F1A75EA11007C68AC /* InstCombinePHI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF771A75E8DC007C68AC /* InstCombinePHI.cpp */; };
+		1F8DB0401A75EA11007C68AC /* InstCombineSelect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF781A75E8DC007C68AC /* InstCombineSelect.cpp */; };
+		1F8DB0411A75EA11007C68AC /* InstCombineShifts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF791A75E8DC007C68AC /* InstCombineShifts.cpp */; };
+		1F8DB0421A75EA11007C68AC /* InstCombineSimplifyDemanded.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF7A1A75E8DC007C68AC /* InstCombineSimplifyDemanded.cpp */; };
+		1F8DB0431A75EA11007C68AC /* InstCombineVectorOps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF7B1A75E8DC007C68AC /* InstCombineVectorOps.cpp */; };
+		1F8DB0441A75EA11007C68AC /* InstructionCombining.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF7D1A75E8DC007C68AC /* InstructionCombining.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +158,13 @@
 			remoteInfo = Intrinsics.gen;
 		};
 		1F8DB0241A75E9B8007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DAF3A1A75E8A2007C68AC /* LLVM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F68173E1A75AFA500570C60;
+			remoteInfo = Intrinsics.gen;
+		};
+		1F8DB0361A75EA04007C68AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F8DAF3A1A75E8A2007C68AC /* LLVM.xcodeproj */;
 			proxyType = 1;
@@ -289,6 +309,7 @@
 		1F8DAFF71A75E8DC007C68AC /* SLPVectorizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SLPVectorizer.cpp; sourceTree = "<group>"; };
 		1F8DAFF81A75E8DC007C68AC /* Vectorize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vectorize.cpp; sourceTree = "<group>"; };
 		1F8DB0201A75E99C007C68AC /* libLLVMInstrumentation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMInstrumentation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8DB0321A75E9EE007C68AC /* libLLVMInstCombine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMInstCombine.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +321,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F8DB01D1A75E99C007C68AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8DB02F1A75E9EE007C68AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -350,6 +378,7 @@
 			children = (
 				1F8DAF661A75E8BF007C68AC /* libLLVMTransformUtils.a */,
 				1F8DB0201A75E99C007C68AC /* libLLVMInstrumentation.a */,
+				1F8DB0321A75E9EE007C68AC /* libLLVMInstCombine.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -566,6 +595,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F8DB0301A75E9EE007C68AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -605,6 +641,24 @@
 			productReference = 1F8DB0201A75E99C007C68AC /* libLLVMInstrumentation.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F8DB0311A75E9EE007C68AC /* LLVMInstCombine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8DB0331A75E9EE007C68AC /* Build configuration list for PBXNativeTarget "LLVMInstCombine" */;
+			buildPhases = (
+				1F8DB02E1A75E9EE007C68AC /* Sources */,
+				1F8DB02F1A75E9EE007C68AC /* Frameworks */,
+				1F8DB0301A75E9EE007C68AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F8DB0371A75EA04007C68AC /* PBXTargetDependency */,
+			);
+			name = LLVMInstCombine;
+			productName = LLVMInstCombine;
+			productReference = 1F8DB0321A75E9EE007C68AC /* libLLVMInstCombine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -618,6 +672,9 @@
 						CreatedOnToolsVersion = 6.2;
 					};
 					1F8DB01F1A75E99C007C68AC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					1F8DB0311A75E9EE007C68AC = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
@@ -642,6 +699,7 @@
 			targets = (
 				1F8DAF651A75E8BF007C68AC /* LLVMTransformUtils */,
 				1F8DB01F1A75E99C007C68AC /* LLVMInstrumentation */,
+				1F8DB0311A75E9EE007C68AC /* LLVMInstCombine */,
 			);
 		};
 /* End PBXProject section */
@@ -791,6 +849,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F8DB02E1A75E9EE007C68AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8DB0381A75EA11007C68AC /* InstCombineAddSub.cpp in Sources */,
+				1F8DB0391A75EA11007C68AC /* InstCombineAndOrXor.cpp in Sources */,
+				1F8DB03A1A75EA11007C68AC /* InstCombineCalls.cpp in Sources */,
+				1F8DB03B1A75EA11007C68AC /* InstCombineCasts.cpp in Sources */,
+				1F8DB03C1A75EA11007C68AC /* InstCombineCompares.cpp in Sources */,
+				1F8DB03D1A75EA11007C68AC /* InstCombineLoadStoreAlloca.cpp in Sources */,
+				1F8DB03E1A75EA11007C68AC /* InstCombineMulDivRem.cpp in Sources */,
+				1F8DB03F1A75EA11007C68AC /* InstCombinePHI.cpp in Sources */,
+				1F8DB0401A75EA11007C68AC /* InstCombineSelect.cpp in Sources */,
+				1F8DB0411A75EA11007C68AC /* InstCombineShifts.cpp in Sources */,
+				1F8DB0421A75EA11007C68AC /* InstCombineSimplifyDemanded.cpp in Sources */,
+				1F8DB0431A75EA11007C68AC /* InstCombineVectorOps.cpp in Sources */,
+				1F8DB0441A75EA11007C68AC /* InstructionCombining.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -803,6 +881,11 @@
 			isa = PBXTargetDependency;
 			name = Intrinsics.gen;
 			targetProxy = 1F8DB0241A75E9B8007C68AC /* PBXContainerItemProxy */;
+		};
+		1F8DB0371A75EA04007C68AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Intrinsics.gen;
+			targetProxy = 1F8DB0361A75EA04007C68AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -989,6 +1072,82 @@
 			};
 			name = Release;
 		};
+		1F8DB0341A75E9EE007C68AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F8DB0351A75E9EE007C68AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1014,6 +1173,14 @@
 			buildConfigurations = (
 				1F8DB0221A75E99D007C68AC /* Debug */,
 				1F8DB0231A75E99D007C68AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F8DB0331A75E9EE007C68AC /* Build configuration list for PBXNativeTarget "LLVMInstCombine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8DB0341A75E9EE007C68AC /* Debug */,
+				1F8DB0351A75E9EE007C68AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
