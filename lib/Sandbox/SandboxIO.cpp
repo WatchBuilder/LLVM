@@ -82,6 +82,10 @@ int llvm_sb::symlink(const char *dest, const char *source) {
     return llvm_sb::symlink_redir(dest, source);
 }
 
+int llvm_sb::rename(const char *source, const char *dest) {
+    return llvm_sb::rename_redir(source, dest);
+}
+
 int llvm_sb::remove(const char *dest) {
     return llvm_sb::remove_redir(dest);
 }
