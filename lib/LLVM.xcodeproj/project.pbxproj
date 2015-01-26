@@ -868,39 +868,6 @@
 		1F29265E1A759ABE00010E0D /* DWARFTypeUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWARFTypeUnit.h; sourceTree = "<group>"; };
 		1F29265F1A759ABE00010E0D /* DWARFUnit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DWARFUnit.cpp; sourceTree = "<group>"; };
 		1F2926601A759ABE00010E0D /* DWARFUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DWARFUnit.h; sourceTree = "<group>"; };
-		1F2926621A759ABE00010E0D /* EventListenerCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventListenerCommon.h; sourceTree = "<group>"; };
-		1F2926631A759ABE00010E0D /* ExecutionEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExecutionEngine.cpp; sourceTree = "<group>"; };
-		1F2926641A759ABE00010E0D /* ExecutionEngineBindings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExecutionEngineBindings.cpp; sourceTree = "<group>"; };
-		1F2926661A759ABE00010E0D /* IntelJITEventListener.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IntelJITEventListener.cpp; sourceTree = "<group>"; };
-		1F2926671A759ABE00010E0D /* IntelJITEventsWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntelJITEventsWrapper.h; sourceTree = "<group>"; };
-		1F2926681A759ABE00010E0D /* ittnotify_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ittnotify_config.h; sourceTree = "<group>"; };
-		1F2926691A759ABE00010E0D /* ittnotify_types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ittnotify_types.h; sourceTree = "<group>"; };
-		1F29266A1A759ABE00010E0D /* jitprofiling.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = jitprofiling.c; sourceTree = "<group>"; };
-		1F29266B1A759ABE00010E0D /* jitprofiling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jitprofiling.h; sourceTree = "<group>"; };
-		1F29266D1A759ABE00010E0D /* Execution.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Execution.cpp; sourceTree = "<group>"; };
-		1F29266E1A759ABE00010E0D /* ExternalFunctions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExternalFunctions.cpp; sourceTree = "<group>"; };
-		1F29266F1A759ABE00010E0D /* Interpreter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Interpreter.cpp; sourceTree = "<group>"; };
-		1F2926701A759ABE00010E0D /* Interpreter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interpreter.h; sourceTree = "<group>"; };
-		1F2926721A759ABE00010E0D /* JIT.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JIT.cpp; sourceTree = "<group>"; };
-		1F2926731A759ABE00010E0D /* JIT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JIT.h; sourceTree = "<group>"; };
-		1F2926741A759ABE00010E0D /* JITEmitter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JITEmitter.cpp; sourceTree = "<group>"; };
-		1F2926751A759ABE00010E0D /* JITMemoryManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JITMemoryManager.cpp; sourceTree = "<group>"; };
-		1F2926771A759ABE00010E0D /* MCJIT.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MCJIT.cpp; sourceTree = "<group>"; };
-		1F2926781A759ABE00010E0D /* MCJIT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCJIT.h; sourceTree = "<group>"; };
-		1F2926791A759ABE00010E0D /* SectionMemoryManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SectionMemoryManager.cpp; sourceTree = "<group>"; };
-		1F29267B1A759ABE00010E0D /* OProfileJITEventListener.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OProfileJITEventListener.cpp; sourceTree = "<group>"; };
-		1F29267C1A759ABE00010E0D /* OProfileWrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OProfileWrapper.cpp; sourceTree = "<group>"; };
-		1F29267D1A759ABE00010E0D /* RTDyldMemoryManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RTDyldMemoryManager.cpp; sourceTree = "<group>"; };
-		1F29267F1A759ABE00010E0D /* GDBRegistrar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GDBRegistrar.cpp; sourceTree = "<group>"; };
-		1F2926801A759ABE00010E0D /* JITRegistrar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JITRegistrar.h; sourceTree = "<group>"; };
-		1F2926811A759ABE00010E0D /* ObjectImageCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectImageCommon.h; sourceTree = "<group>"; };
-		1F2926821A759ABE00010E0D /* RuntimeDyld.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RuntimeDyld.cpp; sourceTree = "<group>"; };
-		1F2926831A759ABE00010E0D /* RuntimeDyldELF.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RuntimeDyldELF.cpp; sourceTree = "<group>"; };
-		1F2926841A759ABE00010E0D /* RuntimeDyldELF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeDyldELF.h; sourceTree = "<group>"; };
-		1F2926851A759ABE00010E0D /* RuntimeDyldImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeDyldImpl.h; sourceTree = "<group>"; };
-		1F2926861A759ABE00010E0D /* RuntimeDyldMachO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RuntimeDyldMachO.cpp; sourceTree = "<group>"; };
-		1F2926871A759ABE00010E0D /* RuntimeDyldMachO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeDyldMachO.h; sourceTree = "<group>"; };
-		1F2926881A759ABE00010E0D /* TargetSelect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TargetSelect.cpp; sourceTree = "<group>"; };
 		1F29268A1A759ABE00010E0D /* AsmWriter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AsmWriter.cpp; sourceTree = "<group>"; };
 		1F29268B1A759ABE00010E0D /* AsmWriter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AsmWriter.h; sourceTree = "<group>"; };
 		1F29268C1A759ABE00010E0D /* AttributeImpl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributeImpl.h; sourceTree = "<group>"; };
@@ -3206,94 +3173,6 @@
 			path = DebugInfo;
 			sourceTree = "<group>";
 		};
-		1F2926611A759ABE00010E0D /* ExecutionEngine */ = {
-			isa = PBXGroup;
-			children = (
-				1F2926621A759ABE00010E0D /* EventListenerCommon.h */,
-				1F2926631A759ABE00010E0D /* ExecutionEngine.cpp */,
-				1F2926641A759ABE00010E0D /* ExecutionEngineBindings.cpp */,
-				1F2926651A759ABE00010E0D /* IntelJITEvents */,
-				1F29266C1A759ABE00010E0D /* Interpreter */,
-				1F2926711A759ABE00010E0D /* JIT */,
-				1F2926761A759ABE00010E0D /* MCJIT */,
-				1F29267A1A759ABE00010E0D /* OProfileJIT */,
-				1F29267D1A759ABE00010E0D /* RTDyldMemoryManager.cpp */,
-				1F29267E1A759ABE00010E0D /* RuntimeDyld */,
-				1F2926881A759ABE00010E0D /* TargetSelect.cpp */,
-			);
-			path = ExecutionEngine;
-			sourceTree = "<group>";
-		};
-		1F2926651A759ABE00010E0D /* IntelJITEvents */ = {
-			isa = PBXGroup;
-			children = (
-				1F2926661A759ABE00010E0D /* IntelJITEventListener.cpp */,
-				1F2926671A759ABE00010E0D /* IntelJITEventsWrapper.h */,
-				1F2926681A759ABE00010E0D /* ittnotify_config.h */,
-				1F2926691A759ABE00010E0D /* ittnotify_types.h */,
-				1F29266A1A759ABE00010E0D /* jitprofiling.c */,
-				1F29266B1A759ABE00010E0D /* jitprofiling.h */,
-			);
-			path = IntelJITEvents;
-			sourceTree = "<group>";
-		};
-		1F29266C1A759ABE00010E0D /* Interpreter */ = {
-			isa = PBXGroup;
-			children = (
-				1F29266D1A759ABE00010E0D /* Execution.cpp */,
-				1F29266E1A759ABE00010E0D /* ExternalFunctions.cpp */,
-				1F29266F1A759ABE00010E0D /* Interpreter.cpp */,
-				1F2926701A759ABE00010E0D /* Interpreter.h */,
-			);
-			path = Interpreter;
-			sourceTree = "<group>";
-		};
-		1F2926711A759ABE00010E0D /* JIT */ = {
-			isa = PBXGroup;
-			children = (
-				1F2926721A759ABE00010E0D /* JIT.cpp */,
-				1F2926731A759ABE00010E0D /* JIT.h */,
-				1F2926741A759ABE00010E0D /* JITEmitter.cpp */,
-				1F2926751A759ABE00010E0D /* JITMemoryManager.cpp */,
-			);
-			path = JIT;
-			sourceTree = "<group>";
-		};
-		1F2926761A759ABE00010E0D /* MCJIT */ = {
-			isa = PBXGroup;
-			children = (
-				1F2926771A759ABE00010E0D /* MCJIT.cpp */,
-				1F2926781A759ABE00010E0D /* MCJIT.h */,
-				1F2926791A759ABE00010E0D /* SectionMemoryManager.cpp */,
-			);
-			path = MCJIT;
-			sourceTree = "<group>";
-		};
-		1F29267A1A759ABE00010E0D /* OProfileJIT */ = {
-			isa = PBXGroup;
-			children = (
-				1F29267B1A759ABE00010E0D /* OProfileJITEventListener.cpp */,
-				1F29267C1A759ABE00010E0D /* OProfileWrapper.cpp */,
-			);
-			path = OProfileJIT;
-			sourceTree = "<group>";
-		};
-		1F29267E1A759ABE00010E0D /* RuntimeDyld */ = {
-			isa = PBXGroup;
-			children = (
-				1F29267F1A759ABE00010E0D /* GDBRegistrar.cpp */,
-				1F2926801A759ABE00010E0D /* JITRegistrar.h */,
-				1F2926811A759ABE00010E0D /* ObjectImageCommon.h */,
-				1F2926821A759ABE00010E0D /* RuntimeDyld.cpp */,
-				1F2926831A759ABE00010E0D /* RuntimeDyldELF.cpp */,
-				1F2926841A759ABE00010E0D /* RuntimeDyldELF.h */,
-				1F2926851A759ABE00010E0D /* RuntimeDyldImpl.h */,
-				1F2926861A759ABE00010E0D /* RuntimeDyldMachO.cpp */,
-				1F2926871A759ABE00010E0D /* RuntimeDyldMachO.h */,
-			);
-			path = RuntimeDyld;
-			sourceTree = "<group>";
-		};
 		1F2926891A759ABE00010E0D /* IR */ = {
 			isa = PBXGroup;
 			children = (
@@ -5087,7 +4966,6 @@
 				1F2925861A759ABD00010E0D /* Bitcode */,
 				1F2925921A759ABD00010E0D /* CodeGen */,
 				1F2926431A759ABE00010E0D /* DebugInfo */,
-				1F2926611A759ABE00010E0D /* ExecutionEngine */,
 				1F2926891A759ABE00010E0D /* IR */,
 				1F2926B91A759ABE00010E0D /* IRReader */,
 				1F2926BB1A759ABE00010E0D /* Linker */,
