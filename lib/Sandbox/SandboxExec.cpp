@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <llvm-sb/SandboxExec.h>
 
 namespace llvm_sb {
@@ -16,18 +17,26 @@ namespace llvm_sb {
         
         exit_code(int c) : code(c) {}
     };
+    
+    bool redirect_exit = false;
 }
 
 void llvm_sb::exit(int code) {
+    if (!redirect_exit) ::exit(code);
     throw llvm_sb::exit_code(code);
 }
 
 int llvm_sb::run_program(const std::function<int ()> program) {
+    int retval = 0;
+    
+    redirect_exit = true;
     try {
-        return program();
+        retval = program();
     } catch (exit_code c) {
-        return c.code;
+        retval = c.code;
     }
+    redirect_exit = false;
+    return retval;
 }
 
 void llvm_sb::assert_failure(const char *cond, const char *file, int line) {
