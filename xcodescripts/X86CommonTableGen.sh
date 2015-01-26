@@ -11,13 +11,21 @@ set -e
 mkdir -p "${PROJECT_TEMP_ROOT}/llvm_generated"
 
 function TableGen {
-    outfile=$1
+    outfile=${PROJECT_TEMP_ROOT}/llvm_generated/$1
     shift
+    
+    # This test is a bit lame, as if any files included by X86.td
+    # are modified, X86.td will then need to be touched before any
+    # of the other files are regenerated. However, as I do not foresee
+    # modifying these files very often, this should do.
+    if [ "$outfile" -nt "${SRCROOT}/X86.td" ]; then
+        return
+    fi
 
     echo $outfile
     "${BUILT_PRODUCTS_DIR}/llvm-tblgen" \
         -I "${LLVM_PROJECT_ROOT}/include" -I "${SRCROOT}" \
-        "$@" -o "${PROJECT_TEMP_ROOT}/llvm_generated/$1" "${SRCROOT}/X86.td"
+        "$@" -o "$outfile" "${SRCROOT}/X86.td"
 }
 
 TableGen X86GenRegisterInfo.inc -gen-register-info
