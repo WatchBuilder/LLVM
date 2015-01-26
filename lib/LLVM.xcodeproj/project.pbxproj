@@ -756,20 +756,20 @@
 		1F29276D1A759ABE00010E0D /* Triple.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Triple.cpp; sourceTree = "<group>"; };
 		1F29276E1A759ABE00010E0D /* Twine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Twine.cpp; sourceTree = "<group>"; };
 		1F29276F1A759ABE00010E0D /* Unicode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Unicode.cpp; sourceTree = "<group>"; };
-		1F2927711A759ABE00010E0D /* Host.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = Host.inc; sourceTree = "<group>"; };
-		1F2927721A759ABE00010E0D /* Memory.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = Memory.inc; sourceTree = "<group>"; };
-		1F2927731A759ABE00010E0D /* Mutex.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = Mutex.inc; sourceTree = "<group>"; };
-		1F2927741A759ABE00010E0D /* Path.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = Path.inc; sourceTree = "<group>"; };
-		1F2927751A759ABE00010E0D /* Process.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = Process.inc; sourceTree = "<group>"; };
-		1F2927761A759ABE00010E0D /* Program.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = Program.inc; sourceTree = "<group>"; };
+		1F2927711A759ABE00010E0D /* Host.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = Host.inc; sourceTree = "<group>"; };
+		1F2927721A759ABE00010E0D /* Memory.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = Memory.inc; sourceTree = "<group>"; };
+		1F2927731A759ABE00010E0D /* Mutex.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = Mutex.inc; sourceTree = "<group>"; };
+		1F2927741A759ABE00010E0D /* Path.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = Path.inc; sourceTree = "<group>"; };
+		1F2927751A759ABE00010E0D /* Process.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = Process.inc; sourceTree = "<group>"; };
+		1F2927761A759ABE00010E0D /* Program.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = Program.inc; sourceTree = "<group>"; };
 		1F2927771A759ABE00010E0D /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		1F2927781A759ABE00010E0D /* RWMutex.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = RWMutex.inc; sourceTree = "<group>"; };
-		1F2927791A759ABE00010E0D /* Signals.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = Signals.inc; sourceTree = "<group>"; };
-		1F29277A1A759ABE00010E0D /* system_error.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = system_error.inc; sourceTree = "<group>"; };
-		1F29277B1A759ABE00010E0D /* ThreadLocal.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = ThreadLocal.inc; sourceTree = "<group>"; };
-		1F29277C1A759ABE00010E0D /* TimeValue.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = TimeValue.inc; sourceTree = "<group>"; };
+		1F2927781A759ABE00010E0D /* RWMutex.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = RWMutex.inc; sourceTree = "<group>"; };
+		1F2927791A759ABE00010E0D /* Signals.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = Signals.inc; sourceTree = "<group>"; };
+		1F29277A1A759ABE00010E0D /* system_error.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = system_error.inc; sourceTree = "<group>"; };
+		1F29277B1A759ABE00010E0D /* ThreadLocal.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = ThreadLocal.inc; sourceTree = "<group>"; };
+		1F29277C1A759ABE00010E0D /* TimeValue.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = TimeValue.inc; sourceTree = "<group>"; };
 		1F29277D1A759ABE00010E0D /* Unix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unix.h; sourceTree = "<group>"; };
-		1F29277E1A759ABE00010E0D /* Watchdog.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = Watchdog.inc; sourceTree = "<group>"; };
+		1F29277E1A759ABE00010E0D /* Watchdog.inc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; path = Watchdog.inc; sourceTree = "<group>"; };
 		1F29277F1A759ABE00010E0D /* Valgrind.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Valgrind.cpp; sourceTree = "<group>"; };
 		1F2927801A759ABE00010E0D /* Watchdog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Watchdog.cpp; sourceTree = "<group>"; };
 		1F2927821A759ABE00010E0D /* DynamicLibrary.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = DynamicLibrary.inc; sourceTree = "<group>"; };
@@ -6702,6 +6702,7 @@
 				1F6817411A75AFA600570C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F68174B1A75B0AC00570C60 /* Build configuration list for PBXNativeTarget "LLVMCore" */ = {
 			isa = XCConfigurationList;
@@ -6710,6 +6711,7 @@
 				1F68174D1A75B0AC00570C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F6817841A75B13D00570C60 /* Build configuration list for PBXNativeTarget "LLVMIRReader" */ = {
 			isa = XCConfigurationList;
@@ -6718,6 +6720,7 @@
 				1F6817861A75B13D00570C60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
