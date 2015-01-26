@@ -2424,7 +2424,6 @@
 		1F6817061A75AE7600570C60 /* SubtargetEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SubtargetEmitter.cpp; sourceTree = "<group>"; };
 		1F6817071A75AE7600570C60 /* TableGen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TableGen.cpp; sourceTree = "<group>"; };
 		1F6817081A75AE7600570C60 /* TableGenBackends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableGenBackends.h; sourceTree = "<group>"; };
-		1F6817091A75AE7600570C60 /* tdtags */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = tdtags; sourceTree = "<group>"; };
 		1F68170A1A75AE7600570C60 /* TGValueTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TGValueTypes.cpp; sourceTree = "<group>"; };
 		1F68170B1A75AE7600570C60 /* X86DisassemblerShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X86DisassemblerShared.h; sourceTree = "<group>"; };
 		1F68170C1A75AE7600570C60 /* X86DisassemblerTables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = X86DisassemblerTables.cpp; sourceTree = "<group>"; };
@@ -5811,7 +5810,6 @@
 				1F6817061A75AE7600570C60 /* SubtargetEmitter.cpp */,
 				1F6817071A75AE7600570C60 /* TableGen.cpp */,
 				1F6817081A75AE7600570C60 /* TableGenBackends.h */,
-				1F6817091A75AE7600570C60 /* tdtags */,
 				1F68170A1A75AE7600570C60 /* TGValueTypes.cpp */,
 				1F68170B1A75AE7600570C60 /* X86DisassemblerShared.h */,
 				1F68170C1A75AE7600570C60 /* X86DisassemblerTables.cpp */,
