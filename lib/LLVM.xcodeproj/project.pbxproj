@@ -108,6 +108,7 @@
 		1F292E901A759B3500010E0D /* YAMLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2927911A759ABE00010E0D /* YAMLParser.cpp */; };
 		1F292E911A759B3500010E0D /* YAMLTraits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2927921A759ABE00010E0D /* YAMLTraits.cpp */; };
 		1F292E921A759B4100010E0D /* raw_ostream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F29274A1A759ABE00010E0D /* raw_ostream.cpp */; };
+		1F350DB71A76BDF300DAC138 /* LinkModules.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2926BC1A759ABE00010E0D /* LinkModules.cpp */; };
 		1F6816C71A75ADBD00570C60 /* Error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2927941A759ABE00010E0D /* Error.cpp */; };
 		1F6816C81A75ADBD00570C60 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2927951A759ABE00010E0D /* Main.cpp */; };
 		1F6816C91A75ADBD00570C60 /* Record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F2927961A759ABE00010E0D /* Record.cpp */; };
@@ -1716,6 +1717,7 @@
 		1F292E971A75AACB00010E0D /* llvm-config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "llvm-config.h"; sourceTree = "<group>"; };
 		1F292E981A75AACB00010E0D /* Targets.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = Targets.def; sourceTree = "<group>"; };
 		1F292E991A75AADB00010E0D /* DataTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataTypes.h; sourceTree = "<group>"; };
+		1F350DB31A76BDE800DAC138 /* libLLVMLinker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMLinker.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6816C31A75AD9800570C60 /* libLLVMTableGen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMTableGen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6816D31A75AE0400570C60 /* llvm-tblgen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "llvm-tblgen"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6816E11A75AE7600570C60 /* AsmMatcherEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AsmMatcherEmitter.cpp; sourceTree = "<group>"; };
@@ -1801,6 +1803,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F8DAE0D1A75DF13007C68AC /* libLLVMSandboxSupport.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F350DB01A76BDE800DAC138 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3535,6 +3544,7 @@
 				1F8DB1831A75EFF9007C68AC /* libLLVMDebugInfo.a */,
 				1F8DB1A71A75F041007C68AC /* libLLVMAsmParser.a */,
 				1F8DB2631A75F27B007C68AC /* libLLVMTarget.a */,
+				1F350DB31A76BDE800DAC138 /* libLLVMLinker.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3644,6 +3654,13 @@
 
 /* Begin PBXHeadersBuildPhase section */
 		1F292E301A759B0A00010E0D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F350DB11A76BDE800DAC138 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -3818,6 +3835,23 @@
 			name = LLVMSupport;
 			productName = LLVMSupport;
 			productReference = 1F292E321A759B0A00010E0D /* libLLVMSupport.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1F350DB21A76BDE800DAC138 /* LLVMLinker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F350DB61A76BDE800DAC138 /* Build configuration list for PBXNativeTarget "LLVMLinker" */;
+			buildPhases = (
+				1F350DAF1A76BDE800DAC138 /* Sources */,
+				1F350DB01A76BDE800DAC138 /* Frameworks */,
+				1F350DB11A76BDE800DAC138 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLVMLinker;
+			productName = LLVMLinker;
+			productReference = 1F350DB31A76BDE800DAC138 /* libLLVMLinker.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		1F6816C21A75AD9800570C60 /* LLVMTableGen */ = {
@@ -4214,6 +4248,9 @@
 					1F292E311A759B0A00010E0D = {
 						CreatedOnToolsVersion = 6.1;
 					};
+					1F350DB21A76BDE800DAC138 = {
+						CreatedOnToolsVersion = 6.2;
+					};
 					1F6816C21A75AD9800570C60 = {
 						CreatedOnToolsVersion = 6.2;
 					};
@@ -4321,6 +4358,7 @@
 				1F8DB1821A75EFF9007C68AC /* LLVMDebugInfo */,
 				1F8DB1A61A75F041007C68AC /* LLVMAsmParser */,
 				1F8DB2621A75F27B007C68AC /* LLVMTarget */,
+				1F350DB21A76BDE800DAC138 /* LLVMLinker */,
 			);
 		};
 /* End PBXProject section */
@@ -4434,6 +4472,14 @@
 				1F292E8F1A759B3500010E0D /* Watchdog.cpp in Sources */,
 				1F292E901A759B3500010E0D /* YAMLParser.cpp in Sources */,
 				1F292E911A759B3500010E0D /* YAMLTraits.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F350DAF1A76BDE800DAC138 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F350DB71A76BDF300DAC138 /* LinkModules.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5144,6 +5190,81 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1F350DB41A76BDE800DAC138 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F350DB51A76BDE800DAC138 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -6856,6 +6977,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1F350DB61A76BDE800DAC138 /* Build configuration list for PBXNativeTarget "LLVMLinker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F350DB41A76BDE800DAC138 /* Debug */,
+				1F350DB51A76BDE800DAC138 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1F6816C61A75AD9800570C60 /* Build configuration list for PBXNativeTarget "LLVMTableGen" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -7052,6 +7181,7 @@
 				1F8DB2651A75F27B007C68AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FA6AD671A75D5F800997E31 /* Build configuration list for PBXNativeTarget "LLVMSandboxSupport" */ = {
 			isa = XCConfigurationList;
