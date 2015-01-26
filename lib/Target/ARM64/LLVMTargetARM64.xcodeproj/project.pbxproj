@@ -47,6 +47,7 @@
 		1F8DB47C1A75FB58007C68AC /* ARM64TargetMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB42E1A75FAEF007C68AC /* ARM64TargetMachine.cpp */; };
 		1F8DB47E1A75FB58007C68AC /* ARM64TargetObjectFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB4301A75FAEF007C68AC /* ARM64TargetObjectFile.cpp */; };
 		1F8DB4801A75FB58007C68AC /* ARM64TargetTransformInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB4321A75FAEF007C68AC /* ARM64TargetTransformInfo.cpp */; };
+		1F8DB48B1A75FC1A007C68AC /* ARM64TargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DB44C1A75FAEF007C68AC /* ARM64TargetInfo.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,6 +233,13 @@
 			remoteGlobalIDString = 1F68173E1A75AFA500570C60;
 			remoteInfo = Intrinsics.gen;
 		};
+		1F8DB4891A75FC13007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DB3AD1A75F9B6007C68AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F8DB3FD1A75F9F2007C68AC;
+			remoteInfo = ARM64CommonTableGen;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -304,10 +312,18 @@
 		1F8DB44A1A75FAEF007C68AC /* ARM64MCTargetDesc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARM64MCTargetDesc.h; sourceTree = "<group>"; };
 		1F8DB44C1A75FAEF007C68AC /* ARM64TargetInfo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ARM64TargetInfo.cpp; sourceTree = "<group>"; };
 		1F8DB4531A75FB44007C68AC /* libLLVMARM64CodeGen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMARM64CodeGen.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8DB4851A75FC0D007C68AC /* libLLVMARM64Info.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMARM64Info.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1F8DB4501A75FB44007C68AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8DB4821A75FC0D007C68AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -498,6 +514,7 @@
 			isa = PBXGroup;
 			children = (
 				1F8DB4531A75FB44007C68AC /* libLLVMARM64CodeGen.a */,
+				1F8DB4851A75FC0D007C68AC /* libLLVMARM64Info.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -506,6 +523,13 @@
 
 /* Begin PBXHeadersBuildPhase section */
 		1F8DB4511A75FB44007C68AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8DB4831A75FC0D007C68AC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -534,6 +558,24 @@
 			productReference = 1F8DB4531A75FB44007C68AC /* libLLVMARM64CodeGen.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F8DB4841A75FC0D007C68AC /* LLVMARM64Info */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8DB4861A75FC0E007C68AC /* Build configuration list for PBXNativeTarget "LLVMARM64Info" */;
+			buildPhases = (
+				1F8DB4811A75FC0D007C68AC /* Sources */,
+				1F8DB4821A75FC0D007C68AC /* Frameworks */,
+				1F8DB4831A75FC0D007C68AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F8DB48A1A75FC13007C68AC /* PBXTargetDependency */,
+			);
+			name = LLVMARM64Info;
+			productName = LLVMARM64Info;
+			productReference = 1F8DB4851A75FC0D007C68AC /* libLLVMARM64Info.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -546,6 +588,9 @@
 						CreatedOnToolsVersion = 6.2;
 					};
 					1F8DB4521A75FB44007C68AC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					1F8DB4841A75FC0D007C68AC = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
@@ -570,6 +615,7 @@
 			targets = (
 				1F8DB3FD1A75F9F2007C68AC /* ARM64CommonTableGen */,
 				1F8DB4521A75FB44007C68AC /* LLVMARM64CodeGen */,
+				1F8DB4841A75FC0D007C68AC /* LLVMARM64Info */,
 			);
 		};
 /* End PBXProject section */
@@ -788,6 +834,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F8DB4811A75FC0D007C68AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8DB48B1A75FC1A007C68AC /* ARM64TargetInfo.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -805,6 +859,11 @@
 			isa = PBXTargetDependency;
 			name = Intrinsics.gen;
 			targetProxy = 1F8DB45A1A75FB4C007C68AC /* PBXContainerItemProxy */;
+		};
+		1F8DB48A1A75FC13007C68AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F8DB3FD1A75F9F2007C68AC /* ARM64CommonTableGen */;
+			targetProxy = 1F8DB4891A75FC13007C68AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -929,6 +988,82 @@
 			};
 			name = Release;
 		};
+		1F8DB4871A75FC0E007C68AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F8DB4881A75FC0E007C68AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -954,6 +1089,14 @@
 			buildConfigurations = (
 				1F8DB4561A75FB44007C68AC /* Debug */,
 				1F8DB4571A75FB44007C68AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F8DB4861A75FC0E007C68AC /* Build configuration list for PBXNativeTarget "LLVMARM64Info" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8DB4871A75FC0E007C68AC /* Debug */,
+				1F8DB4881A75FC0E007C68AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
