@@ -63,6 +63,39 @@
 		1F8DB0421A75EA11007C68AC /* InstCombineSimplifyDemanded.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF7A1A75E8DC007C68AC /* InstCombineSimplifyDemanded.cpp */; };
 		1F8DB0431A75EA11007C68AC /* InstCombineVectorOps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF7B1A75E8DC007C68AC /* InstCombineVectorOps.cpp */; };
 		1F8DB0441A75EA11007C68AC /* InstructionCombining.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAF7D1A75E8DC007C68AC /* InstructionCombining.cpp */; };
+		1F8DB04F1A75EA9E007C68AC /* ADCE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFAF1A75E8DC007C68AC /* ADCE.cpp */; };
+		1F8DB0501A75EA9E007C68AC /* CodeGenPrepare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFB01A75E8DC007C68AC /* CodeGenPrepare.cpp */; };
+		1F8DB0511A75EA9E007C68AC /* ConstantProp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFB11A75E8DC007C68AC /* ConstantProp.cpp */; };
+		1F8DB0521A75EA9E007C68AC /* CorrelatedValuePropagation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFB21A75E8DC007C68AC /* CorrelatedValuePropagation.cpp */; };
+		1F8DB0531A75EA9E007C68AC /* DCE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFB31A75E8DC007C68AC /* DCE.cpp */; };
+		1F8DB0541A75EA9E007C68AC /* DeadStoreElimination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFB41A75E8DC007C68AC /* DeadStoreElimination.cpp */; };
+		1F8DB0551A75EA9E007C68AC /* EarlyCSE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFB51A75E8DC007C68AC /* EarlyCSE.cpp */; };
+		1F8DB0561A75EA9E007C68AC /* FlattenCFGPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFB61A75E8DC007C68AC /* FlattenCFGPass.cpp */; };
+		1F8DB0571A75EA9E007C68AC /* GlobalMerge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFB71A75E8DC007C68AC /* GlobalMerge.cpp */; };
+		1F8DB0581A75EA9E007C68AC /* GVN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFB81A75E8DC007C68AC /* GVN.cpp */; };
+		1F8DB0591A75EA9E007C68AC /* IndVarSimplify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFB91A75E8DC007C68AC /* IndVarSimplify.cpp */; };
+		1F8DB05A1A75EA9E007C68AC /* JumpThreading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFBA1A75E8DC007C68AC /* JumpThreading.cpp */; };
+		1F8DB05B1A75EA9E007C68AC /* LICM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFBB1A75E8DC007C68AC /* LICM.cpp */; };
+		1F8DB05C1A75EA9E007C68AC /* LoopDeletion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFBC1A75E8DC007C68AC /* LoopDeletion.cpp */; };
+		1F8DB05D1A75EA9E007C68AC /* LoopIdiomRecognize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFBD1A75E8DC007C68AC /* LoopIdiomRecognize.cpp */; };
+		1F8DB05E1A75EA9E007C68AC /* LoopInstSimplify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFBE1A75E8DC007C68AC /* LoopInstSimplify.cpp */; };
+		1F8DB05F1A75EA9E007C68AC /* LoopRotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFBF1A75E8DC007C68AC /* LoopRotation.cpp */; };
+		1F8DB0601A75EA9E007C68AC /* LoopStrengthReduce.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFC01A75E8DC007C68AC /* LoopStrengthReduce.cpp */; };
+		1F8DB0611A75EA9E007C68AC /* LoopUnrollPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFC11A75E8DC007C68AC /* LoopUnrollPass.cpp */; };
+		1F8DB0621A75EA9E007C68AC /* LoopUnswitch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFC21A75E8DC007C68AC /* LoopUnswitch.cpp */; };
+		1F8DB0631A75EA9E007C68AC /* LowerAtomic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFC31A75E8DC007C68AC /* LowerAtomic.cpp */; };
+		1F8DB0641A75EA9E007C68AC /* MemCpyOptimizer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFC41A75E8DC007C68AC /* MemCpyOptimizer.cpp */; };
+		1F8DB0651A75EA9E007C68AC /* PartiallyInlineLibCalls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFC51A75E8DC007C68AC /* PartiallyInlineLibCalls.cpp */; };
+		1F8DB0661A75EA9E007C68AC /* Reassociate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFC61A75E8DC007C68AC /* Reassociate.cpp */; };
+		1F8DB0671A75EA9E007C68AC /* Reg2Mem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFC71A75E8DC007C68AC /* Reg2Mem.cpp */; };
+		1F8DB0681A75EA9E007C68AC /* Scalar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFC81A75E8DC007C68AC /* Scalar.cpp */; };
+		1F8DB0691A75EA9E007C68AC /* ScalarReplAggregates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFC91A75E8DC007C68AC /* ScalarReplAggregates.cpp */; };
+		1F8DB06A1A75EA9E007C68AC /* SCCP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFCA1A75E8DC007C68AC /* SCCP.cpp */; };
+		1F8DB06B1A75EA9E007C68AC /* SimplifyCFGPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFCB1A75E8DC007C68AC /* SimplifyCFGPass.cpp */; };
+		1F8DB06C1A75EA9E007C68AC /* Sink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFCC1A75E8DC007C68AC /* Sink.cpp */; };
+		1F8DB06D1A75EA9E007C68AC /* SROA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFCD1A75E8DC007C68AC /* SROA.cpp */; };
+		1F8DB06E1A75EA9E007C68AC /* StructurizeCFG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFCE1A75E8DC007C68AC /* StructurizeCFG.cpp */; };
+		1F8DB06F1A75EA9E007C68AC /* TailRecursionElimination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DAFCF1A75E8DC007C68AC /* TailRecursionElimination.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +198,13 @@
 			remoteInfo = Intrinsics.gen;
 		};
 		1F8DB0361A75EA04007C68AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F8DAF3A1A75E8A2007C68AC /* LLVM.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F68173E1A75AFA500570C60;
+			remoteInfo = Intrinsics.gen;
+		};
+		1F8DB04D1A75EA8E007C68AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1F8DAF3A1A75E8A2007C68AC /* LLVM.xcodeproj */;
 			proxyType = 1;
@@ -310,6 +350,7 @@
 		1F8DAFF81A75E8DC007C68AC /* Vectorize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vectorize.cpp; sourceTree = "<group>"; };
 		1F8DB0201A75E99C007C68AC /* libLLVMInstrumentation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMInstrumentation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8DB0321A75E9EE007C68AC /* libLLVMInstCombine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMInstCombine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F8DB0491A75EA88007C68AC /* libLLVMScalarOpts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLLVMScalarOpts.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +369,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F8DB02F1A75E9EE007C68AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F8DB0461A75EA88007C68AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,6 +427,7 @@
 				1F8DAF661A75E8BF007C68AC /* libLLVMTransformUtils.a */,
 				1F8DB0201A75E99C007C68AC /* libLLVMInstrumentation.a */,
 				1F8DB0321A75E9EE007C68AC /* libLLVMInstCombine.a */,
+				1F8DB0491A75EA88007C68AC /* libLLVMScalarOpts.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -602,6 +651,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F8DB0471A75EA88007C68AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -659,6 +715,24 @@
 			productReference = 1F8DB0321A75E9EE007C68AC /* libLLVMInstCombine.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		1F8DB0481A75EA88007C68AC /* LLVMScalarOpts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F8DB04A1A75EA88007C68AC /* Build configuration list for PBXNativeTarget "LLVMScalarOpts" */;
+			buildPhases = (
+				1F8DB0451A75EA88007C68AC /* Sources */,
+				1F8DB0461A75EA88007C68AC /* Frameworks */,
+				1F8DB0471A75EA88007C68AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F8DB04E1A75EA8E007C68AC /* PBXTargetDependency */,
+			);
+			name = LLVMScalarOpts;
+			productName = LLVMScalarOpts;
+			productReference = 1F8DB0491A75EA88007C68AC /* libLLVMScalarOpts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -675,6 +749,9 @@
 						CreatedOnToolsVersion = 6.2;
 					};
 					1F8DB0311A75E9EE007C68AC = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					1F8DB0481A75EA88007C68AC = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
@@ -700,6 +777,7 @@
 				1F8DAF651A75E8BF007C68AC /* LLVMTransformUtils */,
 				1F8DB01F1A75E99C007C68AC /* LLVMInstrumentation */,
 				1F8DB0311A75E9EE007C68AC /* LLVMInstCombine */,
+				1F8DB0481A75EA88007C68AC /* LLVMScalarOpts */,
 			);
 		};
 /* End PBXProject section */
@@ -869,6 +947,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F8DB0451A75EA88007C68AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8DB04F1A75EA9E007C68AC /* ADCE.cpp in Sources */,
+				1F8DB0501A75EA9E007C68AC /* CodeGenPrepare.cpp in Sources */,
+				1F8DB0511A75EA9E007C68AC /* ConstantProp.cpp in Sources */,
+				1F8DB0521A75EA9E007C68AC /* CorrelatedValuePropagation.cpp in Sources */,
+				1F8DB0531A75EA9E007C68AC /* DCE.cpp in Sources */,
+				1F8DB0541A75EA9E007C68AC /* DeadStoreElimination.cpp in Sources */,
+				1F8DB0551A75EA9E007C68AC /* EarlyCSE.cpp in Sources */,
+				1F8DB0561A75EA9E007C68AC /* FlattenCFGPass.cpp in Sources */,
+				1F8DB0571A75EA9E007C68AC /* GlobalMerge.cpp in Sources */,
+				1F8DB0581A75EA9E007C68AC /* GVN.cpp in Sources */,
+				1F8DB0591A75EA9E007C68AC /* IndVarSimplify.cpp in Sources */,
+				1F8DB05A1A75EA9E007C68AC /* JumpThreading.cpp in Sources */,
+				1F8DB05B1A75EA9E007C68AC /* LICM.cpp in Sources */,
+				1F8DB05C1A75EA9E007C68AC /* LoopDeletion.cpp in Sources */,
+				1F8DB05D1A75EA9E007C68AC /* LoopIdiomRecognize.cpp in Sources */,
+				1F8DB05E1A75EA9E007C68AC /* LoopInstSimplify.cpp in Sources */,
+				1F8DB05F1A75EA9E007C68AC /* LoopRotation.cpp in Sources */,
+				1F8DB0601A75EA9E007C68AC /* LoopStrengthReduce.cpp in Sources */,
+				1F8DB0611A75EA9E007C68AC /* LoopUnrollPass.cpp in Sources */,
+				1F8DB0621A75EA9E007C68AC /* LoopUnswitch.cpp in Sources */,
+				1F8DB0631A75EA9E007C68AC /* LowerAtomic.cpp in Sources */,
+				1F8DB0641A75EA9E007C68AC /* MemCpyOptimizer.cpp in Sources */,
+				1F8DB0651A75EA9E007C68AC /* PartiallyInlineLibCalls.cpp in Sources */,
+				1F8DB0661A75EA9E007C68AC /* Reassociate.cpp in Sources */,
+				1F8DB0671A75EA9E007C68AC /* Reg2Mem.cpp in Sources */,
+				1F8DB0681A75EA9E007C68AC /* Scalar.cpp in Sources */,
+				1F8DB0691A75EA9E007C68AC /* ScalarReplAggregates.cpp in Sources */,
+				1F8DB06A1A75EA9E007C68AC /* SCCP.cpp in Sources */,
+				1F8DB06B1A75EA9E007C68AC /* SimplifyCFGPass.cpp in Sources */,
+				1F8DB06C1A75EA9E007C68AC /* Sink.cpp in Sources */,
+				1F8DB06D1A75EA9E007C68AC /* SROA.cpp in Sources */,
+				1F8DB06E1A75EA9E007C68AC /* StructurizeCFG.cpp in Sources */,
+				1F8DB06F1A75EA9E007C68AC /* TailRecursionElimination.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -886,6 +1004,11 @@
 			isa = PBXTargetDependency;
 			name = Intrinsics.gen;
 			targetProxy = 1F8DB0361A75EA04007C68AC /* PBXContainerItemProxy */;
+		};
+		1F8DB04E1A75EA8E007C68AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Intrinsics.gen;
+			targetProxy = 1F8DB04D1A75EA8E007C68AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1146,6 +1269,82 @@
 			};
 			name = Release;
 		};
+		1F8DB04B1A75EA88007C68AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F8DB04C1A75EA88007C68AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1179,6 +1378,14 @@
 			buildConfigurations = (
 				1F8DB0341A75E9EE007C68AC /* Debug */,
 				1F8DB0351A75E9EE007C68AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F8DB04A1A75EA88007C68AC /* Build configuration list for PBXNativeTarget "LLVMScalarOpts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8DB04B1A75EA88007C68AC /* Debug */,
+				1F8DB04C1A75EA88007C68AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
